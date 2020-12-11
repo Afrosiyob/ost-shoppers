@@ -1,0 +1,183 @@
+.product-detail-right-form {
+    // background-color: orange;
+
+    .my-product-sec-five {
+
+        font-family: Montserrat;
+
+        .my-box-content {
+            border: 1px solid #3366FE;
+            border-radius: 8px;
+            padding: 15px;
+
+            p {
+                margin: 8px 0;
+                font-size: 12px;
+                font-weight: bold;
+
+                &:nth-child(7) {
+                    margin-top: 5px;
+                }
+
+                span {
+                    color: #4E5262;
+                }
+
+                &:nth-child(1) span {
+                    margin-left: 3px;
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+
+                &:nth-child(2) span {
+                    margin-left: 3px;
+                    font-size: 12px;
+                    font-weight: 500;
+                }
+
+                &:nth-child(3) span {
+                    margin-left: 3px;
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: #3366FE;
+                }
+
+                &:nth-child(4) span {
+                    margin-left: 3px;
+                }
+
+                &:nth-child(5) span {
+                    margin-left: 3px;
+                }
+            }
+
+            .product-colors {
+                display: flex;
+                justify-items: center;
+
+                .box-shadow {
+
+                    // box-shadow: 0 0 10px rgb(124, 124, 124);
+                    &::before {
+                        display: block;
+                    }
+                }
+
+                div {
+                    width: 19px;
+                    height: 19px;
+                    border-radius: 50%;
+                    margin-right: 5px;
+                    cursor: pointer;
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 19px;
+                        height: 100%;
+                        background-color: #ccc;
+                        z-index: -1;
+                        border-radius: 50%;
+                        transform: scale(1.3);
+                        display: none;
+                    }
+
+
+
+                    &:nth-child(1) {
+                        background-color: #292929;
+                    }
+
+                    &:nth-child(2) {
+                        background-color: #DDDF73;
+                    }
+
+                    &:nth-child(3) {
+                        background-color: #FFE085;
+                    }
+
+                    &:nth-child(4) {
+                        background-color: #FF573A;
+                    }
+
+                    &:nth-child(5) {
+                        background-color: #4B75FF;
+                    }
+                }
+            }
+
+            .my-product-count {
+                width: 90%;
+                height: 33px;
+                margin: 10px auto;
+                border: 1px solid #B6B5B5;
+                border-radius: 20px;
+                display: grid;
+                grid-template-columns: 1fr 3fr 1fr;
+                font-size: 17px;
+                color: #B6B5B5;
+
+                .color1 {
+                    &:active {
+                        background-color: #292929;
+                    }
+                }
+
+                .color2 {
+                    &:active {
+                        background-color: #DDDF73;
+                    }
+                }
+
+                .color3 {
+                    &:active {
+                        background-color: #FFE085;
+                    }
+                }
+
+                .color4 {
+                    &:active {
+                        background-color: #FF573A;
+                    }
+                }
+
+                .color5 {
+                    &:active {
+                        background-color: #4B75FF;
+                    }
+                }
+
+                div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+
+                    &:nth-child(1) {
+                        cursor: pointer;
+                        // &:active {
+                        //     background-color: #4B75FF;
+                        // }
+                        border-top-left-radius: 20px;
+                        border-bottom-left-radius: 20px;
+
+                    }
+
+                    &:nth-child(3) {
+                        border-top-right-radius: 20px;
+                        border-bottom-right-radius: 20px;
+                        cursor: pointer;
+                        // &:active {
+                        //     background-color: #4B75FF;
+                        // }
+                    }
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+.product-under-tab {
+
+    position: relative;
+
+    background-image: url('https://s3-alpha-sig.figma.com/img/6bfd/51ba/8e3c66167c35936861cf52de04381517?Expires=1602460800&Signature=V4lD6DoD-CRPNHtwj9GhUaMFJiKSWU9OKAOIJtEMZWTXoVbDdC8GaluG-Jznu2G-Ej-Lvj3Vm4zpY78B8ganVj3VGhikcmRee4rjb2Iy1wBrk3p3yCNbL1qUfn9I~pRTgNPSOvD~xV8u~wEIAWPVlH0UbxTdbQJk43Sm8HV9-j5noKKHqIIOP9rMYCfpOtHdPX5Wc2TOCJ9MBfwh3~D2H~2tzcaXI1XOsr7-izquU-RYz~YmaC-lAKiuUasyYBULra4eiIDy-B9xJ1yJNB5EH4ilLxBZwvGhmVQ0f-cJTgIYb6doCdfzs9nqL8Tpo61KgNxOBWuG-SDo3S9RlSkaQg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    border-radius: 4px;
+    overflow: hidden;
+
+
+
+
+    .bg-shadow-box {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        padding: 15px;
+        background-color: rgba(255, 66, 0, 0.65);
+
+        .left-box {
+            // background-color: red;
+
+            h3 {
+                color: white;
+                font-weight: bold;
+                padding: 0;
+                margin: 0;
+            }
+
+            p {
+                color: white;
+                padding: 0;
+                margin: 0;
+                font-size: 14px;
+            }
+        }
+
+        .right-box {
+
+
+            form {
+                display: flex;
+                background-color: #fff;
+                border-radius: 3px;
+                overflow: hidden;
+
+
+                input {
+                    width: 300px;
+                    border: none;
+                    outline: none;
+                    padding: 0 10px;
+                    font-size: 14px;
+
+                    @media all and (max-width:992px) {
+                        width: 150px;
+                    }
+
+                }
+
+                button {
+                    height: 100%;
+
+                    padding: 5px 15px;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    border: none;
+                    box-sizing: border-box;
+                    outline: none;
+                    background-color: #FEC826;
+
+                    font-size: 14px;
+
+
+                }
+            }
+
+        }
+
+        @media all and (max-width:992px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+}

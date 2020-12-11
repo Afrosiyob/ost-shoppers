@@ -1,0 +1,98 @@
+.home-sec-five-box {
+    position: relative;
+
+    background-image: url('https://image.winudf.com/v2/image/Y29tLnRydWVhcHBzLnNhbW15Lm5hdHVyZV9zY3JlZW5zaG90c182X2I1N2MzN2Nj/screen-6.jpg?fakeurl=1&type=.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    border-radius: 4px;
+    overflow: hidden;
+
+
+
+
+    .bg-shadow-box {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        padding: 15px;
+        background-color: rgba(0, 4, 255, 0.301);
+
+        .left-box {
+            // background-color: red;
+
+            h3 {
+                color: white;
+                font-weight: bold;
+                padding: 0;
+                margin: 0;
+            }
+
+            p {
+                color: white;
+                padding: 0;
+                margin: 0;
+                font-size: 14px;
+            }
+        }
+
+        .right-box {
+
+
+            form {
+                display: flex;
+                background-color: #fff;
+                border-radius: 3px;
+                overflow: hidden;
+
+
+                input {
+                    width: 300px;
+                    border: none;
+                    outline: none;
+                    padding: 0 10px;
+                    font-size: 14px;
+
+                    @media all and (max-width:992px) {
+                        width: 200px;
+                    }
+
+                }
+
+                button {
+                    height: 100%;
+
+                    padding: 5px 15px;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    border: none;
+                    box-sizing: border-box;
+                    outline: none;
+                    background-color: #FEC826;
+
+                    font-size: 14px;
+
+
+                }
+            }
+
+        }
+
+        @media all and (max-width:992px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}

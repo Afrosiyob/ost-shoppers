@@ -1,0 +1,7 @@
+.home-mob-header {
+    display: none;
+
+    @media all and (max-width:992px) {
+        display: flex;
+    }
+}

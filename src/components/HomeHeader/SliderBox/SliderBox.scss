@@ -1,0 +1,54 @@
+.slider-box {
+    width: 100%;
+    position: relative;
+
+
+
+
+    .controls {
+        position: absolute;
+        right: 0;
+        bottom: 7px;
+        background-color: #fff;
+        z-index: 3;
+        padding: 5px 10px;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            border: none;
+            background-color: transparent;
+            outline: none;
+        }
+
+        span {
+            width: 50px;
+            height: 2px;
+            background-color: black;
+        }
+    }
+
+    .slide-item {
+        // background-color: blue;
+        height: 300px;
+        width: 100px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media all and (max-width:992px) {
+            // height: 150px;
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,180 @@
+.home-sec-three {
+
+
+    .left-box-sec {
+        // background-color: red;
+
+        .left-item {
+
+            border: 2px solid #3366FE;
+            background-color: #fff;
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+
+
+
+
+            .titul-top {
+                display: flex;
+                width: 100%;
+
+                h2 {
+                    width: 70%;
+                    color: #3366FE;
+                    font-weight: bold;
+
+                    @media all and (max-width:1200px) {
+                        font-size: 18px;
+                    }
+
+                }
+
+                .sale-box {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 60px;
+                    background-color: #3366FE;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    color: white;
+                    box-sizing: border-box;
+                    flex-direction: column;
+
+                    p {
+                        font-size: 12px;
+                        text-align: center;
+                        padding: 0;
+                        margin: 0;
+                        color: white;
+                    }
+
+                    text-align: center;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            p {
+                font-size: 12px;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+                color: #3366FE;
+                font-weight: bolder;
+            }
+
+            .progress-box {
+                width: 100%;
+
+                .progress-top {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 12px;
+                    font-weight: bolder;
+                }
+
+                .progress-item {
+                    width: 100%;
+                    height: 8px;
+                    border-radius: 5px;
+                    background-color: rgba(0, 0, 0, 0.2);
+
+                    .in-progress {
+
+                        height: 100%;
+                        border-radius: 5px;
+                        background-color: #3366FE;
+                    }
+                }
+            }
+
+            p.last-text {
+                width: 100%;
+                font-size: 12px;
+                text-align: left;
+                padding-top: 10px;
+            }
+
+        }
+
+        .best-sel {
+            padding: 15px;
+            border: 1px solid #DCDCDC;
+            box-sizing: border-box;
+            border-radius: 4px;
+            background-color: #fff;
+
+            h4 {
+                font-weight: bold;
+
+            }
+
+            .sel-item {
+                display: flex;
+                align-items: center;
+                align-content: center;
+
+                img {
+                    width: 40%;
+                    height: auto;
+
+                }
+
+                .sale-item-info {
+                    padding-left: 10px;
+
+                    h5 {
+                        padding: 0;
+                        margin: 0;
+                        font-size: 14px;
+                        color: black;
+                        font-weight: bolder;
+
+                    }
+
+                    p {
+                        font-size: 12px;
+                        padding: 0;
+                        margin: 0;
+                        color: #4E5262;
+                    }
+                }
+            }
+        }
+
+        .add-box {
+            background: #FEC826;
+            border-radius: 4px;
+            width: 100%;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+        }
+    }
+
+    .right-box-sec {
+        // background-color: blue;
+        // background-color: #fff;
+
+        border-radius: 3px;
+    }
+}

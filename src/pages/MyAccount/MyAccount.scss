@@ -1,0 +1,9 @@
+.my-acc-page {
+    .left-tab-box {
+        transition: all 0.2s linear;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

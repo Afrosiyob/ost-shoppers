@@ -1,0 +1,101 @@
+.footer-box {
+    .footer-top-box {
+        color: black;
+
+        h1.title {
+            font-weight: bold;
+
+            span {
+                color: blue;
+            }
+        }
+
+        p {
+            color: #4E5262;
+            padding: 0;
+            margin: 0;
+
+            svg {
+                margin-right: 5px;
+            }
+        }
+
+        .buttons {
+            width: 100%;
+            display: flex;
+
+            @media all and (max-width:992px) {
+                flex-direction: column;
+            }
+
+
+            a {
+                color: black;
+                margin-right: 5px;
+
+                @media all and (max-width:768px) {
+                    margin: 0;
+                }
+
+                button {
+                    // padding: 7px 0px 0px 27px !important;
+                    padding: 5px 25px;
+                    border-radius: 20px;
+                    font-size: 12px;
+                }
+
+            }
+        }
+
+        .sot-box {
+            display: flex;
+
+            a {
+                padding: 10px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                width: 50px;
+                height: 50px;
+                background-color: #DCDCDC;
+                color: #1A2138;
+                margin-right: 15px;
+                transition: all 0.2s linear;
+
+                &:hover {
+                    background-color: #1A2138;
+                    color: white;
+                }
+
+
+
+            }
+        }
+
+        h5.title {
+            font-weight: bolder;
+        }
+
+        ul {
+            padding: 0;
+            margin-left: 10px;
+            margin-top: 15px;
+
+            li {
+                padding: 5px 0;
+
+                a {
+                    color: #4E5262;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+
+    .footer-under-box {
+        background-color: #1A2138 !important;
+        color: white;
+    }
+}

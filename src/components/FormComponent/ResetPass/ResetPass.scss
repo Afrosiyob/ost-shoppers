@@ -1,0 +1,78 @@
+.res-pass-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 20px;
+
+    .res-header-top {
+        width: 100%;
+
+        h3,
+        p {
+            text-align: center;
+        }
+
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+
+
+    .wrap-box {
+
+
+        .item-form-box {
+            display: flex;
+
+            background: #FFFFFF;
+            /* --product/modifier */
+
+            border: 1px solid #DCDCDC;
+            box-sizing: border-box;
+            border-radius: 30px;
+            box-sizing: border-box;
+            overflow: hidden;
+
+            .icon-box {
+                border-right: 1px solid #DCDCDC;
+                height: 100%;
+                padding: 8px 10px;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+
+                label {
+                    margin: 0;
+                    height: 100%;
+                }
+            }
+
+            input {
+                width: 100%;
+                border: none !important;
+                outline: none;
+                padding: 8px 10px;
+
+            }
+        }
+    }
+
+    .login-submit {
+        background: #FEC826;
+        border-radius: 30px;
+        color: black;
+        border: none;
+        text-transform: uppercase;
+        padding: 8px 10px;
+        outline: none !important;
+    }
+
+
+}

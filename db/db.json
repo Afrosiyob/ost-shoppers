@@ -1,0 +1,26 @@
+{
+  "login": [
+    {
+      "email": "afrosiyob.a97@gmail.com",
+      "password": "2230102"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "email": "afrosiyob.a97@gmail.com",
+    "password": "2230102"
+  }
+}

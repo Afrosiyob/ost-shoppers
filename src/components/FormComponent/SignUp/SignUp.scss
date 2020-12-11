@@ -1,0 +1,192 @@
+.sign-up-wrap-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 20px;
+
+    h3,
+    p {
+        text-align: center;
+    }
+
+    button.next-sing-up {
+        width: 100%;
+        background: #FEC826;
+        border-radius: 30px;
+        color: black;
+        border: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 8px 10px;
+        outline: none;
+        transition: all 0.2s linear;
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0px 14px 51px -14px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    button.next-sing-up-one {
+        width: 100%;
+        background-color: white;
+        border: 2px solid #FEC826;
+        border-radius: 30px;
+        color: black;
+
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 8px 10px;
+        outline: none;
+        transition: all 0.2s linear;
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0px 14px 51px -14px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+
+
+    .section-one {
+        label {
+            background: #FFFFFF;
+            /* --product/modifier */
+
+            border: 1px solid #DCDCDC;
+            box-sizing: border-box;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            padding: 8px 10px;
+            font-weight: bold;
+            color: #B6B5B5;
+            transition: all 0.2s linear;
+
+            &:hover {
+                cursor: pointer;
+                border: 3px solid #FEC826;
+                box-sizing: border-box;
+                box-shadow: 0px 14px 51px -14px rgba(0, 0, 0, 0.25);
+                border-radius: 30px;
+            }
+        }
+
+        .select-box {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        input {
+            display: none;
+        }
+
+        input.radio-one[type=radio]:checked~label.select-one {
+            border: 3px solid #FEC826 !important;
+            box-sizing: border-box !important;
+            box-shadow: 0px 14px 51px -14px rgba(0, 0, 0, 0.25) !important;
+            border-radius: 30px !important;
+        }
+
+        input.radio-two[type=radio]:checked~label.select-two {
+            border: 3px solid #FEC826 !important;
+            box-sizing: border-box !important;
+            box-shadow: 0px 14px 51px -14px rgba(0, 0, 0, 0.25) !important;
+            border-radius: 30px !important;
+        }
+
+
+
+
+
+    }
+
+    .section-two {
+        .wrap-box {
+
+
+            .item-form-box {
+                display: flex;
+
+                background: #FFFFFF;
+                /* --product/modifier */
+
+                border: 1px solid #DCDCDC;
+                box-sizing: border-box;
+                border-radius: 30px;
+                box-sizing: border-box;
+                overflow: hidden;
+
+                .icon-box {
+                    border-right: 1px solid #DCDCDC;
+                    height: 100%;
+                    padding: 8px 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+
+                    label {
+                        margin: 0;
+                        height: 100%;
+                    }
+                }
+
+                input {
+                    width: 100%;
+                    border: none !important;
+                    outline: none;
+                    padding: 8px 10px;
+
+                }
+            }
+        }
+    }
+
+    .section-three {
+        .wrap-box {
+
+
+            .item-form-box {
+                display: flex;
+
+                background: #FFFFFF;
+                /* --product/modifier */
+
+                border: 1px solid #DCDCDC;
+                box-sizing: border-box;
+                border-radius: 30px;
+                box-sizing: border-box;
+                overflow: hidden;
+
+                .icon-box {
+                    border-right: 1px solid #DCDCDC;
+                    height: 100%;
+                    padding: 8px 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+
+                    label {
+                        margin: 0;
+                        height: 100%;
+                    }
+                }
+
+                input {
+                    width: 100%;
+                    border: none !important;
+                    outline: none;
+                    padding: 8px 10px;
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.cat-box {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    .up-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 0 10px;
+        cursor: pointer;
+
+
+        i {
+            padding: 0 5px;
+        }
+    }
+
+    .down-box {
+        position: absolute;
+
+        transition: all 0.2s linear;
+
+
+        background: #FFFFFF;
+
+
+        border: 1px solid #DCDCDC;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 34px -10px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+
+        display: flex;
+        flex-direction: column;
+
+
+        z-index: -1;
+        opacity: 0;
+        top: 0;
+        right: 0;
+
+        span {
+            padding: 5px 10px;
+            cursor: pointer;
+            transition: all 0.2s linear;
+
+            &:hover {
+                background-color: rgb(28, 131, 228);
+                color: white;
+            }
+        }
+
+
+    }
+
+    .active {
+        z-index: 1;
+        opacity: 1;
+        top: 100%;
+    }
+
+}

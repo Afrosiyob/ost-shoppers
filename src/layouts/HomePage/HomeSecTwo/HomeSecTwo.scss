@@ -1,0 +1,32 @@
+.home-sec-two-box {
+
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: #fff;
+
+    .left-box {
+        // background-color: red;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: center;
+        flex-direction: column;
+
+        h2 {
+            color: black;
+
+            font-weight: bold;
+        }
+
+        p {
+            font-weight: bolder;
+            color: #4E5262;
+        }
+
+
+    }
+
+}

@@ -1,0 +1,13 @@
+.check-out-page {
+
+    input,
+    textarea {
+        border-radius: 20px !important;
+
+        &::placeholder {
+            font-size: 14px;
+            color: lightgrey;
+        }
+    }
+
+}

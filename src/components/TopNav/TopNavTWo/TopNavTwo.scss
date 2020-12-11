@@ -1,0 +1,135 @@
+.wrap-nav-two {
+    box-shadow: 0px 1px 0px #DBE3FF;
+    background-color: #fff;
+
+    .container {
+        .top-nav-two {
+            // background-color: red;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            padding: 10px 0;
+
+
+            .left-nav {
+                padding: 0;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                align-content: center;
+                font-size: 34px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+
+                span {
+                    color: blue;
+                }
+            }
+
+            .mid-nav {
+
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                max-width: 400px;
+
+                @media all and (max-width:992px) {
+                    display: none;
+                }
+            }
+
+            .right-nav {
+                display: flex;
+
+                .summ {
+                    margin-left: 15px;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    align-content: center;
+                    justify-content: center;
+
+                    @media all and (max-width:768px) {
+                        display: none;
+                    }
+                }
+
+                .user {
+                    display: none;
+
+
+
+                    .mob-sign {
+                        // background-color: red;
+                        position: relative;
+
+                        .sign-dropdown {
+                            padding: 10px;
+                            background: #FFFFFF;
+                            border: 1px solid rgba(123, 131, 158, 0.23);
+                            box-sizing: border-box;
+                            box-shadow: 0px 9px 34px rgba(123, 131, 158, 0.5);
+                            border-radius: 5px;
+                            display: none;
+                            position: absolute;
+                            top: 100%;
+                            right: -100%;
+                            z-index: 1;
+
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            align-content: center;
+                            margin-top: 10px;
+
+                            div.sign-span {
+                                font-size: 12px;
+                                // margin-bottom: 10px;
+                                padding: 5px 15px;
+                                width: 150px;
+                                transition: all 0.8s linear;
+                                border: 2px solid #3366FE;
+                                text-align: center;
+
+                                &:hover {
+                                    background-color: #3366FE;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+
+                    @media all and (max-width:768px) {
+                        display: block;
+                    }
+                }
+
+                .right-nav-icons {
+                    position: relative;
+                    margin-left: 20px;
+
+                    .counter {
+                        position: absolute;
+                        right: -5px;
+                        top: 0;
+                        width: 15px;
+                        height: 15px;
+                        background-color: yellow;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        align-content: center;
+                        font-size: 10px;
+                        color: black;
+                        border-radius: 50%;
+                    }
+                }
+
+            }
+        }
+
+    }
+}

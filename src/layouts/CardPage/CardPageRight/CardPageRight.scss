@@ -1,0 +1,116 @@
+.cart-page-two {
+    width: 100%;
+
+    .cart-page-two-container {
+        border: 1px solid #DCDCDC;
+        border-radius: 8px;
+        width: 100%;
+        padding: 25px 33px;
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .update-cart {
+            padding: 14px 0;
+            width: 100%;
+            text-align: center;
+            background-color: #F8F9FD;
+            color: #4E5262;
+            border-radius: 32px;
+            text-transform: uppercase;
+            font-weight: 500;
+            cursor: pointer;
+            letter-spacing: 1px;
+            font-size: 14px;
+        }
+
+        .ckeckout-now {
+            margin: 13px 0;
+            padding: 13px 0;
+            width: 100%;
+            background-color: #3366FE;
+            color: #fff;
+            border-radius: 32px;
+            text-align: center;
+            font-weight: 400;
+            font-size: 14px;
+            text-transform: uppercase;
+            cursor: pointer;
+            letter-spacing: 1px;
+        }
+
+        .my-input {
+            display: grid;
+            grid-template-columns: 2.5fr 1fr;
+            margin: 28px 0;
+
+            div {
+                width: 100%;
+                text-align: center;
+                background-color: #3366FE;
+                color: #fff;
+                padding: 14px 24px;
+                border-top-right-radius: 30px;
+                border-bottom-right-radius: 30px;
+                cursor: pointer;
+            }
+
+            input {
+                width: 100%;
+                background-color: #F5F5F5;
+                outline: none;
+                border: none;
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px;
+                padding: 0 26px;
+                font-size: 14px;
+            }
+        }
+
+        .my-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            align-items: center;
+
+            .x-text-l {
+                font-size: 12px;
+            }
+
+            .x-text-m {
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            div {
+                padding: 10px 0;
+                font-weight: 700;
+                font-size: 16px;
+                text-transform: uppercase;
+                color: #4E5262;
+
+                p {
+                    margin: 0;
+                    color: #3366FE;
+                    font-size: 12px;
+                    font-size: 500;
+                }
+            }
+        }
+
+        .my-p-bottom {
+            border-bottom: 1px solid #F3F3F3;
+        }
+
+        div {
+            width: 100%;
+        }
+
+        @media all and (max-width:768px) {
+            padding: 15px;
+        }
+    }
+}

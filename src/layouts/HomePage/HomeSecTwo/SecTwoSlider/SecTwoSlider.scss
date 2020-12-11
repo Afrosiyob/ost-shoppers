@@ -1,0 +1,65 @@
+.sec-two-slide-box {
+
+    .slide-item {
+        // background-color: red;
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        position: relative;
+        text-align: center;
+        padding: 10px;
+        overflow: hidden;
+        transition: all 0.2s linear;
+
+        .sale-box {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 2px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            color: white;
+            background-color: #FF4E30;
+            border-radius: 15px;
+            z-index: 2;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            transition: all 0.2s linear;
+        }
+
+
+        &:hover {
+
+            cursor: pointer;
+
+            img {
+                transform: scale(1.1);
+            }
+        }
+
+        h5 {
+            padding: 0;
+            margin: 0;
+            color: black;
+            font-weight: bolder;
+        }
+
+        p {
+            padding: 0;
+            margin: 0;
+            font-size: 14px;
+            font-style: italic;
+            color: #4E5262;
+        }
+
+    }
+}

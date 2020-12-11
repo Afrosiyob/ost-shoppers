@@ -1,0 +1,40 @@
+.mob-search-box {
+
+    background: #F8F9FD;
+    border: 1px solid #DBE3FF;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: flex;
+
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+
+
+    input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        padding: 0 10px;
+
+    }
+
+    button {
+        border: none;
+        outline: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: #3366FE;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+
+
+        i {
+            color: white;
+        }
+    }
+}

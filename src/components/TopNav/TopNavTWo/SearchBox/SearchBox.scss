@@ -1,0 +1,43 @@
+.search-form {
+    display: flex;
+    justify-content: space-between;
+
+    height: 100%;
+    border: 1.3px solid #3366FE;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 0;
+
+
+    width: 100%;
+
+
+    input {
+        border: none;
+        outline: none;
+        box-shadow: none;
+        height: 100%;
+        padding: 5px 10px;
+
+    }
+
+    .right-box {
+        display: flex;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+
+        button {
+            border: none;
+            box-shadow: none;
+            outline: none;
+            background-color: rgba(51, 102, 254, 1);
+            border-radius: 3px;
+            box-sizing: border-box;
+            padding: 5px 15px;
+            color: white;
+            height: 100%;
+
+        }
+    }
+}
