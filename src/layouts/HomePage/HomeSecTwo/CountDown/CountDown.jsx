@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import "./CountDown.scss";
+
 function CountDown() {
+
+  const { t } = useTranslation();
+
   const calculateTimeLeft = () => {
     let year = new Date().getFullYear();
     const difference = +new Date(`${year}-12-1`) - +new Date();
@@ -45,7 +50,7 @@ function CountDown() {
 
   return (
     <div className="timer-box">
-      {timerComponents.length ? timerComponents : <span>Time's up!</span>}
+      {timerComponents.length ? timerComponents : <span>{t(`CountDown.Titul`)} </span>}
     </div>
   );
 }

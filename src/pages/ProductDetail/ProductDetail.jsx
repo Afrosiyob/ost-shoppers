@@ -1,5 +1,6 @@
 import { MDBAnimation, MDBCol, MDBContainer, MDBRow } from "mdbreact";
 import React from "react";
+import TitleHemlet from "../../components/TitleHemlet/TitleHemlet";
 import OtherPageNav from "../../components/TopNav/OtherPageNav/OtherPageNav";
 import ProductDetailBottomSlider from "../../layouts/ProductDetail/ProductDetailBottomSlider/ProductDetailBottomSlider";
 import ProductDetailLeftSlider from "../../layouts/ProductDetail/ProductDetailLeftSlider/ProductDetailLeftSlider";
@@ -8,10 +9,10 @@ import ProductDetailRightForm from "../../layouts/ProductDetail/ProductDetailRig
 import ProductDetailUnderSlider from "../../layouts/ProductDetail/ProductDetailUnderSlider/ProductDetailUnderSlider";
 
 import "./ProductDetail.scss";
-
 function ProductDetail() {
   return (
     <div className="product-detail">
+      <TitleHemlet title="Product Detail"/>
       <OtherPageNav />
 
       <MDBContainer>

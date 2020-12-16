@@ -4,8 +4,10 @@ import "./OtherPageNav.scss";
 
 import $ from "jquery";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 function OtherPageNav() {
+  const { t } = useTranslation();
   useEffect(() => {
     $(".dropdown-wrap").click(function () {
       $(this).children(".dropdown-under").slideToggle();
@@ -39,11 +41,12 @@ function OtherPageNav() {
                   fill="#1A2138"
                 />
               </svg>
-              Catigories
+              {t(`OtherPageNav.Titul`)}
             </li>
             <li className="dropdown-wrap">
               {" "}
-              Services{" "}
+              {t(`OtherPageNav.Titul1`)}
+              {" "}
               <svg
                 width="11"
                 height="12"
@@ -63,7 +66,7 @@ function OtherPageNav() {
             </li>
             <li className="dropdown-wrap">
               {" "}
-              Sell on Beshop{" "}
+              {t(`OtherPageNav.Titul2`)}{" "}
               <svg
                 width="11"
                 height="12"
@@ -81,14 +84,14 @@ function OtherPageNav() {
                 <div className="dropdown-under-item">two</div>
               </div>
             </li>
-            <li> Help</li>
+            <li> {t(`OtherPageNav.Titul3`)}</li>
           </ul>
         </div>
         <div className="right-box-nav">
           <ul>
-            <li>Get mobile App</li>
+            <li> {t(`OtherPageNav.Titul4`)}</li>
             <li>
-              Uzbek - UZS{" "}
+            {t(`OtherPageNav.Titul5`)}{" "}
               <svg
                 width="11"
                 height="12"

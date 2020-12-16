@@ -1,5 +1,5 @@
 import "./Footer.scss";
-
+import ShopLogo from "../../assets/shopLogo.svg";
 import React from "react";
 import {
   MDBCol,
@@ -9,8 +9,9 @@ import {
   MDBBtn,
   MDBAnimation,
 } from "mdbreact";
-
+import { useTranslation } from "react-i18next";
 const Footer = () => {
+  const { t } = useTranslation();
   // scrollToTop = () => window.scrollTo(0, 0);
 
   return (
@@ -19,9 +20,7 @@ const Footer = () => {
         <MDBContainer className="text-md-left footer-top-box pb-3">
           <MDBRow>
             <MDBCol md="5">
-              <h1 className="title mb-3">
-                beshop<span>.</span>
-              </h1>
+              <img className="mb-3" src={ShopLogo} alt="shoppers logo" />
               <p>
                 <svg
                   width="17"
@@ -43,7 +42,7 @@ const Footer = () => {
                     fill="#4E5262"
                   />
                 </svg>
-                Got questions? Call us 24/7!
+                {t(`Footer.Titul`)}
               </p>
               <div className="buttons my-2">
                 <a href="#!" className="left-btn">
@@ -72,10 +71,10 @@ const Footer = () => {
                       fill="#4E5262"
                     />
                   </svg>
-                  Location:
+                  {t(`Footer.Titul1`)}
                 </p>
                 <p className="ml-3">
-                  <em>17 Princess Road, London, Greater London NW1 8JR, UK</em>
+                  <em> {t(`Footer.Titul2`)}</em>
                 </p>
               </div>
               <div className="sot-box">
@@ -91,51 +90,51 @@ const Footer = () => {
               </div>
             </MDBCol>
             <MDBCol md="4">
-              <h5 className="title">Customer Services</h5>
+              <h5 className="title">{t(`Footer.Titul3`)}</h5>
               <ul>
                 <li className="list-unstyled">
-                  <a href="#!">Help Center</a>
+                  <a href="#!">{t(`Footer.Titul4`)}</a>
                 </li>
                 <li className="list-unstyled">
-                  <a href="#!">Contact Us</a>
+                  <a href="#!">{t(`Footer.Titul5`)}</a>
                 </li>
                 <li className="list-unstyled">
-                  <a href="#!">Report Abuse</a>
+                  <a href="#!">{t(`Footer.Titul6`)}</a>
                 </li>
                 <li className="list-unstyled">
-                  <a href="#!">Submit & Dispute</a>
+                  <a href="#!">{t(`Footer.Titul7`)}</a>
                 </li>
                 <li className="list-unstyled">
-                  <a href="#!">Policies & Rules</a>
+                  <a href="#!">{t(`Footer.Titul8`)}</a>
                 </li>
                 <li className="list-unstyled">
-                  <a href="#!">Get Paid for Your Feedback </a>
+                  <a href="#!">{t(`Footer.Titul9`)} </a>
                 </li>
               </ul>
             </MDBCol>
             <MDBCol md="3">
-              <h5 className="title">Sell on beshop</h5>
+              <h5 className="title"> {t(`Footer.Titul10`)}</h5>
               <ul>
                 <li className="list-unstyled">
-                  <a href="#!">Supplier Memberships</a>
+                  <a href="#!"> {t(`Footer.Titul11`)} </a>
                 </li>
                 <li className="list-unstyled">
-                  <a href="#!"> Learning Center</a>
+                  <a href="#!">{t(`Footer.Titul12`)} </a>
                 </li>
                 <li className="list-unstyled">
-                  <a href="#!"> Partner Program</a>
+                  <a href="#!">{t(`Footer.Titul13`)} </a>
                 </li>
               </ul>
-              <h5 className="title">Buy on beshop</h5>
+              <h5 className="title">{t(`Footer.Titul14`)} </h5>
               <ul>
                 <li className="list-unstyled">
-                  <a href="#!">All Categories</a>
+                  <a href="#!">{t(`Footer.Titul15`)}</a>
                 </li>
                 <li className="list-unstyled">
-                  <a href="#!"> Request for Quotation</a>
+                  <a href="#!">{t(`Footer.Titul16`)} </a>
                 </li>
                 <li className="list-unstyled">
-                  <a href="#!"> Ready to Ship</a>
+                  <a href="#!">{t(`Footer.Titul17`)} </a>
                 </li>
               </ul>
             </MDBCol>
@@ -143,8 +142,15 @@ const Footer = () => {
         </MDBContainer>
         <div className="footer-copyright text-center py-3 footer-under-box">
           <MDBContainer>
-            &copy; {new Date().getFullYear()} Copyright:{" "}
-            <a href="https://www.mdbootstrap.com"> MDBootstrap.com </a>
+            <MDBRow>
+              <MDBCol md="4">
+                &copy;
+                <small>{t(`Footer.Titul18`)}</small>
+              </MDBCol>
+              <MDBCol md="8">
+                <small>{t(`Footer.Titul19`)}</small>
+              </MDBCol>
+            </MDBRow>
           </MDBContainer>
         </div>
       </MDBFooter>

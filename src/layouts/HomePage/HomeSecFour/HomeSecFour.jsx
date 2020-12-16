@@ -1,9 +1,10 @@
 import { MDBAnimation, MDBContainer } from "mdbreact";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import BrandSlider from "./BrandSlider/BrandSlider";
 import "./HomeSecFour.scss";
-
 function HomeSecFour() {
+  const { t } = useTranslation();
   // const [progress, setprogress] = useState();
   let allBrands = 28;
   let showBrands = 10;
@@ -19,14 +20,15 @@ function HomeSecFour() {
           </div>
           <div className="under-progressbar py-2">
             {" "}
-            Featured{" "}
+            {t(`HomeSecFour.Titul`)}{" "}
             <span className="wrap-box">
               <div
                 className="inner-box"
                 style={{ width: `${widthBrands}%` }}
               ></div>
             </span>{" "}
-            {showBrands} of {allBrands} brands{" "}
+            {showBrands} {t(`HomeSecFour.Titul1`)} {allBrands}{" "}
+            {t(`HomeSecFour.Titul2`)}
           </div>
         </MDBContainer>
       </MDBAnimation>

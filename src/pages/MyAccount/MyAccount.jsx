@@ -1,5 +1,6 @@
 import { MDBCol, MDBContainer, MDBRow } from "mdbreact";
 import React, { useState } from "react";
+import TitleHemlet from "../../components/TitleHemlet/TitleHemlet";
 import OtherPageNav from "../../components/TopNav/OtherPageNav/OtherPageNav";
 import AccountDetails from "../../layouts/AccountDetails/AccountDetails";
 import Dashboard from "../../layouts/Dashboard/Dashboard";
@@ -13,6 +14,7 @@ function MyAccount() {
 
   return (
     <div className="my-acc-page">
+      <TitleHemlet title="My Account"/>
       <OtherPageNav />
       <MDBContainer>
         <div className="my-5 w-100 pt-5">

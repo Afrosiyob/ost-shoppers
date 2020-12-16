@@ -1,5 +1,6 @@
 {
   "msg": "salom",
+<<<<<<< HEAD
   "TopNavOne": {
     "Titul": "200 000 so'mdan ortiq narxni sotib olayotganda, Toshkent shahrida etkazib berish bepul",
     "Titul2": "Kirish",
@@ -99,5 +100,150 @@
     "Titul6": "Kassadan o'tishda tezlikni oshiring",
     "Titul7": "Buyurtmalaringizni osongina kuzatib boring",
     "Titul8": "Barcha xaridlaringizni qayd qilib qo'ying"
+=======
+  "Footer": {
+    "Titul": "Savollaringiz bormi? Bizga 24/7 qo'ng'iroq qiling!",
+    "Titul1": "Manzil:",
+    "Titul2": "Chilonzor tumani, Bunyodkor shoh ko'chasi",
+    "Titul3": "Mijozlarga xizmat ko'rsatish",
+    "Titul4": "Yordam markazi",
+    "Titul5": "Biz bilan bog'lanish",
+    "Titul6": "Noqonuniy foydalanish to'g'risida xabar bering",
+    "Titul7": "Taqdim etish va nizo",
+    "Titul8": "Siyosatlar va qoidalar",
+    "Titul9": "Fikringiz uchun pul oling",
+    "Titul10": "Beshop-da soting",
+    "Titul11": "Ta'minlovchiga a'zolik",
+    "Titul12": "O'quv markazi",
+    "Titul13": "Hamkorlik dasturi",
+    "Titul14": "Beshop-da sotib oling",
+    "Titul15": "Barcha toifalar",
+    "Titul16": "Kotirovka uchun so'rov",
+    "Titul17": "Yuk tashishga tayyormiz",
+    "Titul18": "beshop.uz. Barcha huquqlar himoyalangan",
+    "Titul19": "Mahsulotlarni ro'yxatga olish siyosati - Intellektual mulkni himoya qilish - Maxfiylik siyosati - Foydalanish shartlari - Foydalanuvchi to'g'risidagi ma'lumotlar Huquqiy so'rovlar bo'yicha qo'llanma"
+  },
+  "HomeSecFive": {
+    "Titul": "Axborotnomaga yoziling",
+    "Titul1": "va birinchi xarid uchun $ 20 kuponini oling",
+    "Titul2": "Elektron pochta manzilini kiriting",
+    "Titul3": "Ro'yxatdan o'tish"
+  },
+  "HomeSecFour": {
+    "Titul": "Tavsiya etilgan",
+    "Titul1": "ning",
+    "Titul2": "brandlari"
+  },
+  "HomeSecThree": {
+    "Titul": "Maxsus Taklif",
+    "Titul1": "Sotish",
+    "Titul2": "Suyuq quloqlar Bluetooth metalik minigarnituralar - Rose Gold",
+    "Titul3": "Kunlar qoldi:",
+    "Titul4": "Allaqachon sotilgan",
+    "Titul5": "Bepul etkazib berish bilan",
+    "Titul6": "Eng yaxshi sotuvchilar",
+    "Titul7": "Reklama bu erda"
+  },
+  "HomeTabTwo": {
+    "Titul": "Eng yaxshi narxlar",
+    "Titul1": "Televizor",
+    "Titul2": "Kameralar",
+    "Titul3": "Ovoz",
+    "Titul4": "Telefonlar",
+    "Titul5": "GPS vositalari",
+    "Titul6": "Kompyuterlar",
+    "Titul7": "Portativ audio",
+    "Titul8": "Aksessuarlar"
+  },
+  "HomeSecTwo": {
+    "Titul": "Bitim va takliflar",
+    "Titul1": "Gigiena vositalari"
+  },
+  "CountDown": {
+    "Titul": "Vaqt tugadi!"
+  },
+  "ProductDetailRightForm": {
+    "Titul": "Narx",
+    "Titul1": "Chegirma",
+    "Titul2": "Sotuvchi",
+    "Titul3": "Barcha sotuvlar",
+    "Titul4": "Qolgan",
+    "Titul5": "Rang",
+    "Titul6": "Miqdor"
+  },
+  "ProductDetailUnderSlider": {
+    "Titul": "Samsung Gear S4 Smartwatch-ni 20% chegirma bilan sotib oling, bu kunning eng issiq shovqiniga sabab bo'ldi.",
+    "Titul1": "hozir xarid qilish"
+  },
+  "OtherPageNav": {
+    "Titul": "Kategoriyalar",
+    "Titul1": "Xizmatlar",
+    "Titul2": "Beshop-da soting",
+    "Titul3": "Yordam",
+    "Titul4": "Mobil ilovani yuklab oling",
+    "Titul5": "O'zbek - so'm"
+  },
+  "CardPageRight": {
+    "Titul": "Jami savat",
+    "Titul1": "Jami",
+    "Titul2": "yuk tashish; yetkazib berish",
+    "Titul3": "Yagona narx:",
+    "Titul4": "Yuk tashishni hisoblang",
+    "Titul5": "Jami",
+    "Titul6": "QO'LLANILADI",
+    "Titul7": "yangilash aravasi",
+    "Titul8": "hozirda chiqing",
+    "Titul9": "Kupon kodi"
+  },
+  "WishListPage": {
+    "Titul": "BeShop-dagi istaklarim ro'yxati",
+    "Titul1": "MAHSULOT",
+    "Titul2": "NARX",
+    "Titul3": "Miqdor",
+    "Titul4": "AKSIYa STATUSI"
+  },
+  "CheckOutPage": {
+    "Titul": "Siz tanlagan mahsulotlar",
+    "Titul1": "hisob-kitob detali",
+    "Titul2": "Ism",
+    "Titul3": "Familiya",
+    "Titul4": "kopmaniya nomi",
+    "Titul5": "Ixtiyoriy",
+    "Titul6": "Mamlakat",
+    "Titul7": "Ko'cha manzili",
+    "Titul8": "Pochta indeksi / Zip",
+    "Titul9": "Shtat",
+    "Titul10": "Elektron pochta manzili",
+    "Titul11": "Hisob ochish?",
+    "Titul12": "* Agar siz ushbu parametrni tanlasangiz, yuqorida siz kiritgan ma'lumotlarga asoslanib siz uchun hisob qaydnomasi ochiladi.",
+    "Titul13": "Yuk tashish tafsilotlari",
+    "Titul14": "Hisob ochish ?",
+    "Titul15": "Xonadon, Suite va boshqalar.",
+    "Titul16": "Shahar",
+    "Titul17": "Pochta indeksi / Zip",
+    "Titul18": "Telefon",
+    "Titul19": "Buyurtma eslatmalari",
+    "Titul20": "Kerak!",
+    "Titul21": "Elektron pochta yaroqsiz",
+    "Titul22": "Juda qisqa!",
+    "Titul23": "Juda uzun!",
+    "Titul24": "Kupon bormi?",
+    "Titul25": "Kodingizni kiritish uchun shu erni bosing",
+    "Titul26": "sizning buyurtmangiz",
+    "Titul27": "Mahsulot",
+    "Titul28": "Jami",
+    "Titul29": "subtotal",
+    "Titul30": "yuk tashish; yetkazib berish",
+    "Titul31": "Yagona narx:",
+    "Titul32": "jami",
+    "Titul33": "To'g'ridan-to'g'ri bank o'tkazmasi",
+    "Titul34": "To'lovlarni tekshiring",
+    "Titul35": "Naqd etkazib berish",
+    "Titul36": "PayPal nima?",
+    "Titul37": "Veb-sayt shartlari bilan o'qidim va roziman *",
+    "Titul38": "Birlamchi",
+    "Titul39": "Qaytgan mijozmi?",
+    "Titul40": "Kirish uchun shu erni bosing"
+>>>>>>> 088c227aed7f22f476b95fd8afb9f6778c1ec8fe
   }
 }

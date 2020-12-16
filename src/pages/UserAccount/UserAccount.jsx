@@ -1,5 +1,6 @@
 import { MDBCol, MDBContainer, MDBRow } from "mdbreact";
 import React from "react";
+import TitleHemlet from "../../components/TitleHemlet/TitleHemlet";
 import OtherPageNav from "../../components/TopNav/OtherPageNav/OtherPageNav";
 import UserLogin from "../../layouts/UserAccount/UserLogin/UserLogin";
 import UserRegistration from "../../layouts/UserAccount/UserRegistration/UserRegistration";
@@ -11,7 +12,11 @@ function UserAccount() {
 
   return (
     <div>
+<<<<<<< HEAD
       <TitleHelmet title="UserAccount page" />
+=======
+      <TitleHemlet title="User Account"/>
+>>>>>>> 088c227aed7f22f476b95fd8afb9f6778c1ec8fe
       <OtherPageNav />
       <MDBContainer>
         <div className="my-5 w-100 pt-5">

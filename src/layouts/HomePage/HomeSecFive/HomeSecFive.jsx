@@ -1,8 +1,9 @@
 import { MDBAnimation, MDBContainer } from "mdbreact";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./HomeSecFive.scss";
-
 function HomeSecFive() {
+  const {t}=useTranslation();
   return (
     <div className="my-3">
       <MDBAnimation reveal type="fadeInUp">
@@ -10,13 +11,15 @@ function HomeSecFive() {
           <div className="home-sec-five-box">
             <div className="bg-shadow-box">
               <div className="left-box">
-                <h3>Sign up to Newsletter</h3>
-                <p>...and receive $20 coupon for first shopping.</p>
+                <h3>{t(`HomeSecFive.Titul`)}</h3>
+                <p>{t(`HomeSecFive.Titul1`)}</p>
               </div>
               <div className="right-box">
                 <form action="#!">
-                  <input type="email" placeholder="Enter email address" />
-                  <button type="submit">Sign up</button>
+                  <input type="email" placeholder={t(`HomeSecFive.Titul2`)} />
+                  <button type="submit">
+                    {t(`HomeSecFive.Titul3`)}
+                  </button>
                 </form>
               </div>
             </div>
