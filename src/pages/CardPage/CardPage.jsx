@@ -1,12 +1,12 @@
 import { MDBAnimation, MDBCol, MDBContainer, MDBRow } from "mdbreact";
 import React, { useState } from "react";
+import TitleHemlet from "../../components/TitleHemlet/TitleHemlet";
 import OtherPageNav from "../../components/TopNav/OtherPageNav/OtherPageNav";
 
 import CardPageLeft from "../../layouts/CardPage/CardPageLeft/CardPageLeft";
 import CardPageRight from "../../layouts/CardPage/CardPageRight/CardPageRight";
 
 import "./CardPage.scss";
-
 function CardPage() {
   const [summ, setSumm] = useState(0);
 
@@ -19,6 +19,7 @@ function CardPage() {
 
   return (
     <div>
+      <TitleHemlet title="Card Page"/>
       <OtherPageNav />
       <MDBContainer>
         <MDBRow>

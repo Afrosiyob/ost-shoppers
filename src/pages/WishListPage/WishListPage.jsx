@@ -1,7 +1,8 @@
 import { MDBAnimation, MDBCol, MDBContainer } from "mdbreact";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
+import TitleHemlet from "../../components/TitleHemlet/TitleHemlet";
 import OtherPageNav from "../../components/TopNav/OtherPageNav/OtherPageNav";
-
 import "./WishListPage.scss";
 
 const arry = [
@@ -64,6 +65,9 @@ const arry = [
 ];
 
 function WishListPage() {
+  const { t } = useTranslation();
+
+
   const [productCount, setProductCount] = useState(false);
 
   const hundleClick = (id, item) => {
@@ -88,12 +92,13 @@ function WishListPage() {
   };
   return (
     <div>
+      <TitleHemlet title="Wish List Page"/>
       <OtherPageNav />
       <MDBAnimation type="fadeInUp">
         <MDBContainer>
           <div className="my-5 w-100 pt-5">
             <h1 className="w-100 text-center font-weight-bold">
-              My wishlist on BeShop
+             {t(`WishListPage.Titul`)}
             </h1>
           </div>
 
@@ -108,10 +113,10 @@ function WishListPage() {
                 />
                 <div className="my-cart-container">
                   <div className="product-menu">
-                    <div>PRODUCT</div>
-                    <div>PRICE</div>
-                    <div>QUANTITY</div>
-                    <div>STOCK STATUS</div>
+                    <div>{t(`WishListPage.Titul1`)}</div>
+                    <div>{t(`WishListPage.Titul2`)}</div>
+                    <div>{t(`WishListPage.Titul3`)}</div>
+                    <div>{t(`WishListPage.Titul4`)}</div>
                   </div>
                   <div>
                     {arry.map((element) => {

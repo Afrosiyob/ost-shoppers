@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./ProductDetailRightForm.scss";
+
 function ProductDetailRightForm() {
+  const { t } = useTranslation();
   const [count, setCount] = useState(0);
   const [color, setColor] = useState("color1");
 
@@ -21,24 +24,24 @@ function ProductDetailRightForm() {
       <div className="my-product-sec-five">
         <div className="my-box-content">
           <p>
-            Price: <span>$33.37</span>
+            {t(`ProductDetailRightForm.Titul`)}: <span>$33.37</span>
           </p>
           <p>
-            Discount:{" "}
+          {t(`ProductDetailRightForm.Titul1`)}:{" "}
             <span>
               14% - <strike>$35.24</strike>
             </span>
           </p>
           <p>
-            Sold by: <span>Beshop co.</span>
+          {t(`ProductDetailRightForm.Titul2`)}: <span>Beshop co.</span>
           </p>
           <p>
-            All sales: <span>147</span>
+            {t(`ProductDetailRightForm.Titul3`)}: <span>147</span>
           </p>
           <p>
-            Remaining: <span>475</span>
+            {t(`ProductDetailRightForm.Titul4`)}: <span>475</span>
           </p>
-          <p>Color:</p>
+          <p>{t(`ProductDetailRightForm.Titul5`)}:</p>
           <div className="product-colors">
             <div
               onClick={() => mySetColor("color1")}
@@ -61,7 +64,7 @@ function ProductDetailRightForm() {
               className={color === "color5" ? "box-shadow" : ""}
             ></div>
           </div>
-          <p>Quantity:</p>
+          <p>{t(`ProductDetailRightForm.Titul6`)}:</p>
           <div className="my-product-count">
             <div onClick={() => productCount(0)} className={color}>
               <i class="fa fa-minus"></i>

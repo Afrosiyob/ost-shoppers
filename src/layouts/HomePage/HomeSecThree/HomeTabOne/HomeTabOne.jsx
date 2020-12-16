@@ -8,8 +8,8 @@ function HomeTabOne() {
     <div className="home-tab-one">
       <Tabs>
         <TabList>
-          <Tab>Title 1</Tab>
-          <Tab>Title 2</Tab>
+          <Tab>Tab 1</Tab>
+          <Tab>Tab 2</Tab>
         </TabList>
 
         <TabPanel>

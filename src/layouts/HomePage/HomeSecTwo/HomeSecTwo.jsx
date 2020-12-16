@@ -1,10 +1,13 @@
 import { MDBAnimation, MDBCol, MDBContainer, MDBRow } from "mdbreact";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import CountDown from "./CountDown/CountDown";
 import "./HomeSecTwo.scss";
 import SecTwoSlider from "./SecTwoSlider/SecTwoSlider";
-
 function HomeSecTwo() {
+
+  const {t} = useTranslation();
+
   return (
     <div className="my-5">
       <MDBContainer>
@@ -13,8 +16,8 @@ function HomeSecTwo() {
             <MDBRow>
               <MDBCol sm="6" md="3">
                 <div className="left-box">
-                  <h2>Deal and offers</h2>
-                  <p>Hygiene equipments</p>
+                  <h2>{t(`HomeSecTwo.Titul`)}</h2>
+                  <p>{t(`HomeSecTwo.Titul1`)}</p>
                   <CountDown />
                 </div>
               </MDBCol>

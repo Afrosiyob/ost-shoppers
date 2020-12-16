@@ -3,13 +3,16 @@ import "./HomeTabTwo.scss";
 
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 function HomeTabTwo() {
+  const { t } = useTranslation();
   return (
     <div className="home-tab-two">
       <Tabs>
         <TabList>
-          <Tab>Title 1</Tab>
-          <Tab>Title 2</Tab>
+          <Tab>Tab 1</Tab>
+          <Tab>Tab 2</Tab>
+          
         </TabList>
 
         <TabPanel>

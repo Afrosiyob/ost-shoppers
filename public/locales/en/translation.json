@@ -1,3 +1,141 @@
 {
-  "msg": "hello"
+  "msg": "hello",
+  "Footer": {
+    "Titul": "Got questions? Call us 24/7!",
+    "Titul1": "Location:",
+    "Titul2": "Chilanzar district, Bunyodkor ave",
+    "Titul3": "Customer Services",
+    "Titul4": "Help Center",
+    "Titul5": "Contact Us",
+    "Titul6": "Report Abuse",
+    "Titul7": "Submit & Dispute",
+    "Titul8": " Policies & Rules",
+    "Titul9": "Get Paid for Your Feedback",
+    "Titul10": "Sell on beshop",
+    "Titul11": "Supplier Memberships",
+    "Titul12": "Learning Center",
+    "Titul13": "Partner Program",
+    "Titul14": "Buy on beshop",
+    "Titul15": "All Categories",
+    "Titul16": "Request for Quotation",
+    "Titul17": "Ready to Ship",
+    "Titul18": "beshop.uz. All rights reserved.",
+    "Titul19": "Product Listing Policy - Intellectual Property Protection - Privacy Policy - Terms of Use - User Information Legal Enquiry Guide"
+  },
+  "HomeSecFive": {
+    "Titul": "Sign up to Newsletter",
+    "Titul1": "...and receive $20 coupon for first shopping",
+    "Titul2": "Enter email address",
+    "Titul3": "Sign Up"
+  },
+  "HomeSecFour": {
+    "Titul": "Featured",
+    "Titul1": "of ",
+    "Titul2": "brands"
+  },
+  "HomeSecThree": {
+    "Titul": "Special Offer",
+    "Titul1": "Sale",
+    "Titul2": "Liquid Ears Bluetooth Metallic Headphones - Rose Gold",
+    "Titul3": "Days left:",
+    "Titul4": "Already sold",
+    "Titul5": "With free shipping",
+    "Titul6": "Best sellers",
+    "Titul7": "ADS HERE"
+  },
+  "HomeSecTwo": {
+    "Titul": "Deal and offers",
+    "Titul1": "Hygiene equipments"
+  },
+  "CountDown": {
+    "Titul": "Time's up!"
+  },
+  "ProductDetailRightForm": {
+    "Titul": "Price",
+    "Titul1": "Discount",
+    "Titul2": "Sold by",
+    "Titul3": "All sales",
+    "Titul4": "Remaining",
+    "Titul5": "Color",
+    "Titul6": "Quantity"
+  },
+  "ProductDetailUnderSlider": {
+    "Titul": "Buy the Samsung Gear S4 Smartwatch at a 20% discount, which caused the hottest noise of the day.",
+    "Titul1": "buy now"
+  },
+  "OtherPageNav": {
+    "Titul": "Catigories",
+    "Titul1": "Services",
+    "Titul2": "Sell on Beshop",
+    "Titul3": "Help",
+    "Titul4": "Get mobile App",
+    "Titul5": "Uzbek - UZS"
+  },
+  "CardPageRight": {
+    "Titul": "Cart totals",
+    "Titul1": "Subtotal",
+    "Titul2": "Shipping",
+    "Titul3": "Flat Rate:",
+    "Titul4": "Calculate Shipping",
+    "Titul5": "Total",
+    "Titul6": "APPLY",
+    "Titul7": "update cart",
+    "Titul8": "checkout now",
+    "Titul9": "Cupon code"
+  },
+  "WishListPage": {
+    "Titul": "My wishlist on BeShop",
+    "Titul1": "PRODUCT",
+    "Titul2": "PRICE",
+    "Titul3": "QUANTITY",
+    "Titul4": "STOCK STATUS"
+  },
+  "CheckOutPage":{
+    "Titul":"Your selected products",
+    "Titul1":"billing detail",
+    "Titul2":"First Name",
+    "Titul3":"Last Name",
+    "Titul4":"Company Name",
+    "Titul5":"Optional",
+    "Titul6":"Country",
+    "Titul7":"Street Address",
+    "Titul8":"Postcode/Zip",
+    "Titul9":"State",
+    "Titul10":"Email Address",
+    "Titul11":"Create An Account?",
+    "Titul12":"* If you select this option,an account will be opened for you based on the information you entered above.",
+    "Titul13":"Shipping Details details",
+    "Titul14":"Create An Account ?",
+    "Titul15":"Apt, Suite, Etc.",
+  "Titul16":"City",
+  "Titul17":"Postcode/Zip",
+  "Titul18":"Phone",
+  "Titul19":"Order Notes",
+  "Titul20":"Required !",
+  "Titul21":"Invalid email",
+  "Titul22":"Too short!",
+  "Titul23":"Too Long!",
+  "Titul24":"Have a coupon?",
+  "Titul25":"Click here to enter your code",
+  "Titul26":"your order",
+  "Titul27":"Product",
+  "Titul28":"Total",
+  "Titul29":"subtotal",
+  "Titul30":"shipping",
+  "Titul31":"Flat Rate:",
+  "Titul32":"total",
+  "Titul33":"Direct Bank Transfer",
+  "Titul34":"Check Payments",
+  "Titul35":"Cash On Deliver",
+  "Titul36":"Whats Is PayPal?",
+  "Titul37":"I Have Read And Agree To The Website Terms And Conditions *",
+  "Titul38":"Primary",
+  "Titul39":"Returning customer?",
+  "Titul40":"Click here to log in"
+
+  
+
+
+  }
+
 }

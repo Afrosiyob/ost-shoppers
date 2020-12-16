@@ -1,5 +1,6 @@
 import { MDBCol, MDBContainer, MDBRow } from "mdbreact";
 import React from "react";
+import TitleHemlet from "../../components/TitleHemlet/TitleHemlet";
 import OtherPageNav from "../../components/TopNav/OtherPageNav/OtherPageNav";
 import UserLogin from "../../layouts/UserAccount/UserLogin/UserLogin";
 import UserRegistration from "../../layouts/UserAccount/UserRegistration/UserRegistration";
@@ -7,6 +8,7 @@ import UserRegistration from "../../layouts/UserAccount/UserRegistration/UserReg
 function UserAccount() {
   return (
     <div>
+      <TitleHemlet title="User Account"/>
       <OtherPageNav />
       <MDBContainer>
         <div className="my-5 w-100 pt-5">

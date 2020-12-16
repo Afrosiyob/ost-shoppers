@@ -7,61 +7,65 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { Link } from "react-router-dom";
 import OtherPageNav from "../../components/TopNav/OtherPageNav/OtherPageNav";
-
-const initialValues = {
-  firstName: "",
-  lastName: "",
-  companyName: "",
-  country: "",
-  streetAddress: "",
-  aptSuit: "",
-  city: "",
-  postcodeZip: "",
-  state: "",
-  email: "",
-  phone: "",
-  createAnAccount: false,
-  createAnAccountTwo: false,
-  orderNotes: "",
-  productName: "adidas",
-  productPrice: "300$",
-  productCount: 5,
-  subtotal: 1500,
-  shipping: 300,
-  total: 1800,
-  payment: "",
-  readAgree: false,
-};
-
-const validationSchema = Yup.object().shape({
-  firstName: Yup.string().required("Required !"),
-  lastName: Yup.string().required("Required !"),
-
-  country: Yup.string().required("Required !"),
-  streetAddress: Yup.string().required("Required !"),
-  aptSuit: Yup.string().required("Required !"),
-  city: Yup.string().required("Required !"),
-  postcodeZip: Yup.string().required("Required !"),
-  state: Yup.string().required("Required !"),
-  email: Yup.string().email("Invalid email").required("Required !"),
-  phone: Yup.string()
-    .min(7, "Too short!")
-    .max(20, "Too Long!")
-    .required("Required !"),
-  payment: Yup.string().required("Required!"),
-
-  // payment: Yup.string().required("Required !"),
-  // readAgree: Yup.string().required("Required !"),
-});
+import { useTranslation } from "react-i18next";
+import TitleHemlet from "../../components/TitleHemlet/TitleHemlet";
 
 function CheckOutPage() {
+  const { t } = useTranslation();
+  const initialValues = {
+    firstName: "",
+    lastName: "",
+    companyName: "",
+    country: "",
+    streetAddress: "",
+    aptSuit: "",
+    city: "",
+    postcodeZip: "",
+    state: "",
+    email: "",
+    phone: "",
+    createAnAccount: false,
+    createAnAccountTwo: false,
+    orderNotes: "",
+    productName: "adidas",
+    productPrice: "300$",
+    productCount: 5,
+    subtotal: 1500,
+    shipping: 300,
+    total: 1800,
+    payment: "",
+    readAgree: false,
+  };
+
+  const validationSchema = Yup.object().shape({
+    firstName: Yup.string().required(t(`CheckOutPage.Titul20`)),
+    lastName: Yup.string().required(t(`CheckOutPage.Titul20`)),
+
+    country: Yup.string().required(t(`CheckOutPage.Titul20`)),
+    streetAddress: Yup.string().required(t(`CheckOutPage.Titul20`)),
+    aptSuit: Yup.string().required(t(`CheckOutPage.Titul20`)),
+    city: Yup.string().required(t(`CheckOutPage.Titul20`)),
+    postcodeZip: Yup.string().required(t(`CheckOutPage.Titul20`)),
+    state: Yup.string().required(t(`CheckOutPage.Titul20`)),
+    email: Yup.string().email(t(`CheckOutPage.Titul21`)).required("Required !"),
+    phone: Yup.string()
+      .min(7, t(`CheckOutPage.Titul22`))
+      .max(20, t(`CheckOutPage.Titul23`))
+      .required(t(`CheckOutPage.Titul20`)),
+    payment: Yup.string().required(t(`CheckOutPage.Titul20`)),
+
+    // payment: Yup.string().required("Required !"),
+    // readAgree: Yup.string().required("Required !"),
+  });
+
   return (
     <div className="check-out-page">
+      <TitleHemlet title="Check Out Page"/>
       <OtherPageNav />
       <MDBContainer>
         <div className="my-5 w-100 pt-5">
           <h1 className="w-100 text-center font-weight-bold">
-            Your selected products
+            {t(`CheckOutPage.Titul`)}
           </h1>
         </div>
         <Formik
@@ -77,7 +81,7 @@ function CheckOutPage() {
           {({ errors, touched, values }) => (
             <Form>
               <h3 className="text-uppercase font-weight-bold">
-                billing detail
+                {t(`CheckOutPage.Titul1`)}
               </h3>
               <MDBRow>
                 <MDBCol md="8" sm="12">
@@ -86,7 +90,7 @@ function CheckOutPage() {
                       <div>
                         <label htmlFor="firstName">
                           <small>
-                            <b>First Name</b>
+                            <b>{t(`CheckOutPage.Titul2`)}</b>
                           </small>
                         </label>
                         <Field
@@ -94,7 +98,7 @@ function CheckOutPage() {
                           type="text"
                           id="firstName"
                           name="firstName"
-                          placeholder="First Name"
+                          placeholder={t(`CheckOutPage.Titul2`)}
                         />
                         <small style={{ color: "red" }}>
                           <ErrorMessage name="firstName">
@@ -107,7 +111,7 @@ function CheckOutPage() {
                       <div>
                         <label htmlFor="lastName">
                           <small>
-                            <b>Last Name</b>
+                            <b>{t(`CheckOutPage.Titul3`)}</b>
                           </small>
                         </label>
                         <Field
@@ -115,7 +119,7 @@ function CheckOutPage() {
                           type="text"
                           id="lastName"
                           name="lastName"
-                          placeholder="Last Name"
+                          placeholder={t(`CheckOutPage.Titul3`)}
                         />
                         <small style={{ color: "red" }}>
                           <ErrorMessage name="lastName">
@@ -131,7 +135,11 @@ function CheckOutPage() {
                       <div className="mt-3">
                         <label htmlFor="companyName">
                           <small>
-                            <b> Company Name (Optional)</b>
+                            <b>
+                              {" "}
+                              {t(`CheckOutPage.Titul4`)} (
+                              {t(`CheckOutPage.Titul5`)})
+                            </b>
                           </small>
                         </label>
                         <Field
@@ -139,7 +147,7 @@ function CheckOutPage() {
                           type="text"
                           id="companyName"
                           name="companyName"
-                          placeholder="Company Name"
+                          placeholder={t(`CheckOutPage.Titul4`)}
                         />
                       </div>
                     </MDBCol>
@@ -149,7 +157,7 @@ function CheckOutPage() {
                       <div className="mt-3">
                         <label htmlFor="country">
                           <small>
-                            <b>Country</b>
+                            <b>{t(`CheckOutPage.Titul6`)}</b>
                           </small>
                         </label>
                         <Field
@@ -157,7 +165,7 @@ function CheckOutPage() {
                           type="text"
                           id="country"
                           name="country"
-                          placeholder="Country"
+                          placeholder={t(`CheckOutPage.Titul6`)}
                         />
                         <small style={{ color: "red" }}>
                           <ErrorMessage name="country">
@@ -172,7 +180,7 @@ function CheckOutPage() {
                       <div className="mt-3">
                         <label htmlFor="streetAddress">
                           <small>
-                            <b>Street Address</b>
+                            <b>{t(`CheckOutPage.Titul7`)}</b>
                           </small>
                         </label>
                         <Field
@@ -180,7 +188,7 @@ function CheckOutPage() {
                           type="text"
                           id="streetAddress"
                           name="streetAddress"
-                          placeholder="Street Address"
+                          placeholder={t(`CheckOutPage.Titul7`)}
                         />
                         <small style={{ color: "red" }}>
                           <ErrorMessage name="streetAddress">
@@ -193,7 +201,7 @@ function CheckOutPage() {
                       <div className="mt-3">
                         <label htmlFor="aptSuit">
                           <small>
-                            <b>Apt, Suite, Etc.</b>
+                            <b>{t(`CheckOutPage.Titul15`)}</b>
                           </small>
                         </label>
                         <Field
@@ -201,7 +209,7 @@ function CheckOutPage() {
                           type="text"
                           id="aptSuit"
                           name="aptSuit"
-                          placeholder="Apt, Suite, Etc..."
+                          placeholder={t(`CheckOutPage.Titul15`)}
                         />
                         <small style={{ color: "red" }}>
                           <ErrorMessage name="aptSuit">
@@ -230,7 +238,7 @@ function CheckOutPage() {
 
                         <label htmlFor="city">
                           <small>
-                            <b>City</b>
+                            <b>{t(`CheckOutPage.Titul16`)}</b>
                           </small>
                         </label>
                         <Field
@@ -238,7 +246,7 @@ function CheckOutPage() {
                           type="text"
                           id="city"
                           name="city"
-                          placeholder="City"
+                          placeholder={t(`CheckOutPage.Titul16`)}
                         />
                         <small style={{ color: "red" }}>
                           <ErrorMessage name="city">
@@ -252,7 +260,7 @@ function CheckOutPage() {
                         {" "}
                         <label htmlFor="postcodeZip">
                           <small>
-                            <b>Postcode/Zip</b>
+                            <b>{t(`CheckOutPage.Titul17`)}</b>
                           </small>
                         </label>
                         <Field
@@ -260,7 +268,7 @@ function CheckOutPage() {
                           type="text"
                           id="postcodeZip"
                           name="postcodeZip"
-                          placeholder="Postcode/Zip"
+                          placeholder={t(`CheckOutPage.Titul17`)}
                         />
                         <small style={{ color: "red" }}>
                           <ErrorMessage name="postcodeZip">
@@ -276,7 +284,7 @@ function CheckOutPage() {
                         {" "}
                         <label htmlFor="state">
                           <small>
-                            <b>State</b>
+                            <b>{t(`CheckOutPage.Titul9`)}</b>
                           </small>
                         </label>
                         <Field
@@ -284,7 +292,7 @@ function CheckOutPage() {
                           type="texxt"
                           id="state"
                           name="state"
-                          placeholder="State"
+                          placeholder={t(`CheckOutPage.Titul9`)}
                         />
                         <small style={{ color: "red" }}>
                           <ErrorMessage name="state">
@@ -300,7 +308,7 @@ function CheckOutPage() {
                         {" "}
                         <label htmlFor="email">
                           <small>
-                            <b>Email Address</b>
+                            <b>{t(`CheckOutPage.Titul10`)}</b>
                           </small>
                         </label>
                         <Field
@@ -308,7 +316,7 @@ function CheckOutPage() {
                           type="email"
                           id="email"
                           name="email"
-                          placeholder="Email Address"
+                          placeholder={t(`CheckOutPage.Titul10`)}
                         />
                         <small style={{ color: "red" }}>
                           <ErrorMessage name="email">
@@ -322,7 +330,7 @@ function CheckOutPage() {
                         {" "}
                         <label htmlFor="phone">
                           <small>
-                            <b>Phone</b>
+                            <b>{t(`CheckOutPage.Titul18`)}</b>
                           </small>
                         </label>
                         <Field
@@ -330,7 +338,7 @@ function CheckOutPage() {
                           type="phone"
                           id="phone"
                           name="phone"
-                          placeholder="Phone"
+                          placeholder={t(`CheckOutPage.Titul18`)}
                         />
                         <small style={{ color: "red" }}>
                           <ErrorMessage name="phone">
@@ -351,13 +359,9 @@ function CheckOutPage() {
                       <label className="ml-3" htmlFor="createAnAccount">
                         <div className="d-flex flex-column">
                           <p className="m-0 p-0">
-                            <b>Create An Account?</b>
+                            <b>{t(`CheckOutPage.Titul11`)}</b>
                           </p>
-                          <small>
-                            * If you select this option, an account will be
-                            opened for you based on the information you entered
-                            above.
-                          </small>
+                          <small>{t(`CheckOutPage.Titul12`)}</small>
                         </div>
                       </label>
                     </div>
@@ -367,7 +371,7 @@ function CheckOutPage() {
                   </div>
 
                   <h3 className="text-uppercase font-weight-bold">
-                    Shipping Details details
+                    {t(`CheckOutPage.Titul13`)}
                   </h3>
 
                   <MDBCol md="12">
@@ -380,7 +384,7 @@ function CheckOutPage() {
                       <label className="ml-3" htmlFor="createAnAccountTwo">
                         <div className="d-flex flex-column">
                           <p className="m-0 p-0">
-                            <b>Create An Account ?</b>
+                            <b>{t(`CheckOutPage.Titul14`)}</b>
                           </p>
                         </div>
                       </label>
@@ -390,7 +394,10 @@ function CheckOutPage() {
                   <div className="my-3">
                     <label htmlFor="orderNotes">
                       <small>
-                        <b>Order Notes (Optional)</b>
+                        <b>
+                          {t(`CheckOutPage.Titul19`)} (
+                          {t(`CheckOutPage.Titul5`)})
+                        </b>
                       </small>{" "}
                     </label>
                     <Field
@@ -398,7 +405,7 @@ function CheckOutPage() {
                       as="textarea"
                       id="orderNotes"
                       name="orderNotes"
-                      placeholder="orderNotes"
+                      placeholder={t(`CheckOutPage.Titul19`)}
                       rows="4"
                     />
                     <small style={{ color: "red" }}>
@@ -408,14 +415,16 @@ function CheckOutPage() {
                     </small>
                   </div>
                 </MDBCol>
+
                 <MDBCol md="4" sm="12">
                   <div className="rounded border  p-4 mt-3">
                     <div className="mb-3">
                       <p className="p-0 m-0 h6 text-muted">
-                        Returning customer?
+                      {t(`CheckOutPage.Titul39`)}
                       </p>
                       <Link className="font-weight-bold h5" to="/useraccount">
-                        Click here to log in{" "}
+                      {t(`CheckOutPage.Titul40`)}
+                       {" "}
                         <svg
                           width="21"
                           height="21"
@@ -432,9 +441,13 @@ function CheckOutPage() {
                     </div>
 
                     <div>
-                      <p className="p-0 m-0 h6 text-muted">Have a coupon?</p>
+                      <p className="p-0 m-0 h6 text-muted">
+                      {t(`CheckOutPage.Titul24`)}
+
+                      </p>
                       <Link className="font-weight-bold h5">
-                        Click here to enter your code{" "}
+                      {t(`CheckOutPage.Titul25`)}
+                        {" "}
                         <svg
                           width="21"
                           height="21"
@@ -453,12 +466,16 @@ function CheckOutPage() {
 
                   <div className="rounded border  p-4 mt-3">
                     <h4 className="text-uppercase font-weight-bold">
-                      your order
+                    {t(`CheckOutPage.Titul26`)}
                     </h4>
 
                     <div className="d-flex justify-content-between">
-                      <p className="font-weight-bold">Product</p>
-                      <p className="font-weight-bold">Total</p>
+                      <p className="font-weight-bold">
+                      {t(`CheckOutPage.Titul27`)}
+                      </p>
+                      <p className="font-weight-bold">
+                      {t(`CheckOutPage.Titul28`)}
+                      </p>
                     </div>
 
                     <div>
@@ -478,21 +495,25 @@ function CheckOutPage() {
                     </div>
                     <div className="mt-3 d-flex justify-content-between">
                       <p className="text-uppercase font-weight-bold">
-                        subtotal
+                      {t(`CheckOutPage.Titul29`)}
                       </p>
                       <p>$12354</p>
                     </div>
                     <div className=" d-flex justify-content-between">
                       <p className="text-uppercase font-weight-bold">
-                        shipping
+                      {t(`CheckOutPage.Titul30`)}
                       </p>
                       <div>
-                        <small>Flat Rate:</small>
+                        <small>
+                        {t(`CheckOutPage.Titul31`)}
+                        </small>
                         <p>$12300</p>
                       </div>
                     </div>
                     <div className=" d-flex justify-content-between">
-                      <p className="text-uppercase font-weight-bold">total</p>
+                      <p className="text-uppercase font-weight-bold">
+                      {t(`CheckOutPage.Titul32`)}
+                      </p>
                       <p>$12354</p>
                     </div>
 
@@ -504,7 +525,9 @@ function CheckOutPage() {
                           value="One payment"
                           className="mr-2"
                         />
-                        <small>Direct Bank Transfer</small>
+                        <small>
+                        {t(`CheckOutPage.Titul33`)}
+                        </small>
                       </label>
                       <label>
                         <Field
@@ -513,7 +536,9 @@ function CheckOutPage() {
                           value="Two payment"
                           className="mr-2"
                         />
-                        <small>Check Payments</small>
+                        <small> 
+                        {t(`CheckOutPage.Titul34`)}
+                        </small>
                       </label>
                       <label>
                         <Field
@@ -522,7 +547,9 @@ function CheckOutPage() {
                           value="Three payment"
                           className="mr-2"
                         />
-                        <small>Cash On Deliver</small>
+                        <small>
+                        {t(`CheckOutPage.Titul35`)}
+                        </small>
                       </label>
                       <label>
                         <Field
@@ -532,7 +559,9 @@ function CheckOutPage() {
                           className="mr-2"
                         />
                         <small>
-                          PayPal <Link>Whats Is PayPal?</Link>
+                          PayPal <Link>
+                          {t(`CheckOutPage.Titul36`)}
+                          </Link>
                         </small>
                       </label>
 
@@ -548,8 +577,7 @@ function CheckOutPage() {
                         <small>
                           <b>
                             {" "}
-                            I Have Read And Agree To The Website Terms And
-                            Conditions *
+                            {t(`CheckOutPage.Titul37`)}
                           </b>
                         </small>
                       </label>
@@ -562,7 +590,7 @@ function CheckOutPage() {
                         rounded
                         type="submit"
                       >
-                        Primary
+                        {t(`CheckOutPage.Titul38`)}
                       </MDBBtn>
                     </div>
                   </div>
