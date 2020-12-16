@@ -12,11 +12,10 @@ function UserAccount() {
 
   return (
     <div>
-<<<<<<< HEAD
       <TitleHelmet title="UserAccount page" />
-=======
-      <TitleHemlet title="User Account"/>
->>>>>>> 088c227aed7f22f476b95fd8afb9f6778c1ec8fe
+
+      <TitleHemlet title="User Account" />
+
       <OtherPageNav />
       <MDBContainer>
         <div className="my-5 w-100 pt-5">

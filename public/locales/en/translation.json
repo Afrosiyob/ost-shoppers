@@ -1,244 +1,243 @@
 {
-  "msg": "hello",
-<<<<<<< HEAD
-  "TopNavOne": {
-    "Titul": "When buying more than 200,000 soums, delivery in Tashkent is free",
-    "Titul2": "Sign In",
-    "Titul3": "Sign Up",
-    "Titul4": "or"
-  },
-  "HomeHeader": {
-    "Titul": "All Departments"
-  },
-  "Login": {
-    "Titul": "Welcome Back!",
-    "Titul2": "Login to manage your account.",
-    "Titul3": "Forgot Password",
-    "Titul4": "LOGIN",
-    "Titul5": "Do not have an account ?",
-    "Titul6": "Sign up",
-    "Titul7": "OR",
-    "Titul8": "Login with your social account",
-    "Titul9": "Invalid email",
-    "Titul10": "Required",
-    "Titul11": "Too Short!",
-    "Titul12": "Too Long!",
-    "Titul13": "Email",
-    "Titul14": "Password"
-  },
-  "ResetPass": {
-    "Titul": "Yay, Help me :",
-    "Titul2": "Don't worry, your password is attached to the email you entered during the registration process.",
-    "Titul3": "SUBMIT"
-  },
-  "SignUp": {
-    "Titul2": "Passwords must match",
-    "Titul3": "Welcome to Beshop.",
-    "Titul4": "Select a user type before registering",
-    "Titul5": "I’m a seller",
-    "Titul6": "I’m a customer",
-    "Titul7": "Your email address",
-    "Titul8": "Your shop name",
-    "Titul9": "Your Industry Type",
-    "Titul10": "Your Location",
-    "Titul11": "Enter password",
-    "Titul12": "Retype your password",
-    "Titul13": "finish",
-    "Titul14": "Congrats!!!",
-    "Titul15": "Your sales profile is ready, now you can discover millions of buyers.",
-    "Titul16": "go to profile",
-    "Titul17": "customize your shop",
-    "Titul18": "next",
-    "Titul19": "Select password"
-  },
-  "MobSearch": {
-    "Titul": "search"
-  },
-  "TopNavTwo": {
-    "Titul": "sign in",
-    "Titul2": "sign up"
-  },
-  "DropDownCat": {
-    "Titul": "All Catigories"
-  },
-  "ProductHeader": {
-    "Titul": "Same discounts for everyone"
-  },
-  "ProductTab": {
-    "Titul": "load More"
-  },
-  "ProductUnderTab": {
-    "Titul": "Subscribe to store products",
-    "Titul2": "Subscribe to store news to instantly histories of each new product.",
-    "Titul3": "Enter email address",
-    "Titul4": "subscribe"
-  },
-  "FaqHeader": {
-    "Titul": "Hello, How we can help you?",
-    "Titul2": "Selling",
-    "Titul3": "Buying",
-    "Titul4": "Shipping"
-  },
-  "UserAccount": {
-    "Titul": "My Account"
-  },
-  "UserLogin": {
-    "Titul": "Login",
-    "Titul2": "Welcome back! Sign in to your account.",
-    "Titul3": "Username or Email Address",
-    "Titul4": "Enter Username or Email Address",
-    "Titul5": "Password",
-    "Titul6": "Remember Me",
-    "Titul7": "Lost your password?"
-  },
-  "UserRegistration": {
-    "Titul": "Regstration",
-    "Titul2": " Create new account today to reap the benefits of a personalized shopping experience.",
-    "Titul3": "Your personal data will be used to support your experience throughout this website, to manage your account, and for other purposes described in our ",
-    "Titul4": " privacy policy.",
-    "Titul5": "Sign up today and you will be able to :",
-    "Titul6": "Speed your way through checkout",
-    "Titul7": "Track your orders easily",
-    "Titul8": "Keep a record of all your purchases"
-  }
-=======
-  "Footer": {
-    "Titul": "Got questions? Call us 24/7!",
-    "Titul1": "Location:",
-    "Titul2": "Chilanzar district, Bunyodkor ave",
-    "Titul3": "Customer Services",
-    "Titul4": "Help Center",
-    "Titul5": "Contact Us",
-    "Titul6": "Report Abuse",
-    "Titul7": "Submit & Dispute",
-    "Titul8": " Policies & Rules",
-    "Titul9": "Get Paid for Your Feedback",
-    "Titul10": "Sell on beshop",
-    "Titul11": "Supplier Memberships",
-    "Titul12": "Learning Center",
-    "Titul13": "Partner Program",
-    "Titul14": "Buy on beshop",
-    "Titul15": "All Categories",
-    "Titul16": "Request for Quotation",
-    "Titul17": "Ready to Ship",
-    "Titul18": "beshop.uz. All rights reserved.",
-    "Titul19": "Product Listing Policy - Intellectual Property Protection - Privacy Policy - Terms of Use - User Information Legal Enquiry Guide"
-  },
-  "HomeSecFive": {
-    "Titul": "Sign up to Newsletter",
-    "Titul1": "...and receive $20 coupon for first shopping",
-    "Titul2": "Enter email address",
-    "Titul3": "Sign Up"
-  },
-  "HomeSecFour": {
-    "Titul": "Featured",
-    "Titul1": "of ",
-    "Titul2": "brands"
-  },
-  "HomeSecThree": {
-    "Titul": "Special Offer",
-    "Titul1": "Sale",
-    "Titul2": "Liquid Ears Bluetooth Metallic Headphones - Rose Gold",
-    "Titul3": "Days left:",
-    "Titul4": "Already sold",
-    "Titul5": "With free shipping",
-    "Titul6": "Best sellers",
-    "Titul7": "ADS HERE"
-  },
-  "HomeSecTwo": {
-    "Titul": "Deal and offers",
-    "Titul1": "Hygiene equipments"
-  },
-  "CountDown": {
-    "Titul": "Time's up!"
-  },
-  "ProductDetailRightForm": {
-    "Titul": "Price",
-    "Titul1": "Discount",
-    "Titul2": "Sold by",
-    "Titul3": "All sales",
-    "Titul4": "Remaining",
-    "Titul5": "Color",
-    "Titul6": "Quantity"
-  },
-  "ProductDetailUnderSlider": {
-    "Titul": "Buy the Samsung Gear S4 Smartwatch at a 20% discount, which caused the hottest noise of the day.",
-    "Titul1": "buy now"
-  },
-  "OtherPageNav": {
-    "Titul": "Catigories",
-    "Titul1": "Services",
-    "Titul2": "Sell on Beshop",
-    "Titul3": "Help",
-    "Titul4": "Get mobile App",
-    "Titul5": "Uzbek - UZS"
-  },
-  "CardPageRight": {
-    "Titul": "Cart totals",
-    "Titul1": "Subtotal",
-    "Titul2": "Shipping",
-    "Titul3": "Flat Rate:",
-    "Titul4": "Calculate Shipping",
-    "Titul5": "Total",
-    "Titul6": "APPLY",
-    "Titul7": "update cart",
-    "Titul8": "checkout now",
-    "Titul9": "Cupon code"
-  },
-  "WishListPage": {
-    "Titul": "My wishlist on BeShop",
-    "Titul1": "PRODUCT",
-    "Titul2": "PRICE",
-    "Titul3": "QUANTITY",
-    "Titul4": "STOCK STATUS"
-  },
-  "CheckOutPage":{
-    "Titul":"Your selected products",
-    "Titul1":"billing detail",
-    "Titul2":"First Name",
-    "Titul3":"Last Name",
-    "Titul4":"Company Name",
-    "Titul5":"Optional",
-    "Titul6":"Country",
-    "Titul7":"Street Address",
-    "Titul8":"Postcode/Zip",
-    "Titul9":"State",
-    "Titul10":"Email Address",
-    "Titul11":"Create An Account?",
-    "Titul12":"* If you select this option,an account will be opened for you based on the information you entered above.",
-    "Titul13":"Shipping Details details",
-    "Titul14":"Create An Account ?",
-    "Titul15":"Apt, Suite, Etc.",
-  "Titul16":"City",
-  "Titul17":"Postcode/Zip",
-  "Titul18":"Phone",
-  "Titul19":"Order Notes",
-  "Titul20":"Required !",
-  "Titul21":"Invalid email",
-  "Titul22":"Too short!",
-  "Titul23":"Too Long!",
-  "Titul24":"Have a coupon?",
-  "Titul25":"Click here to enter your code",
-  "Titul26":"your order",
-  "Titul27":"Product",
-  "Titul28":"Total",
-  "Titul29":"subtotal",
-  "Titul30":"shipping",
-  "Titul31":"Flat Rate:",
-  "Titul32":"total",
-  "Titul33":"Direct Bank Transfer",
-  "Titul34":"Check Payments",
-  "Titul35":"Cash On Deliver",
-  "Titul36":"Whats Is PayPal?",
-  "Titul37":"I Have Read And Agree To The Website Terms And Conditions *",
-  "Titul38":"Primary",
-  "Titul39":"Returning customer?",
-  "Titul40":"Click here to log in"
+    "msg": "hello",
+    "TopNavOne": {
+        "Titul": "When buying more than 200,000 soums, delivery in Tashkent is free",
+        "Titul2": "Sign In",
+        "Titul3": "Sign Up",
+        "Titul4": "or"
+    },
+    "HomeHeader": {
+        "Titul": "All Departments"
+    },
+    "Login": {
+        "Titul": "Welcome Back!",
+        "Titul2": "Login to manage your account.",
+        "Titul3": "Forgot Password",
+        "Titul4": "LOGIN",
+        "Titul5": "Do not have an account ?",
+        "Titul6": "Sign up",
+        "Titul7": "OR",
+        "Titul8": "Login with your social account",
+        "Titul9": "Invalid email",
+        "Titul10": "Required",
+        "Titul11": "Too Short!",
+        "Titul12": "Too Long!",
+        "Titul13": "Email",
+        "Titul14": "Password"
+    },
+    "ResetPass": {
+        "Titul": "Yay, Help me :",
+        "Titul2": "Don't worry, your password is attached to the email you entered during the registration process.",
+        "Titul3": "SUBMIT"
+    },
+    "SignUp": {
+        "Titul2": "Passwords must match",
+        "Titul3": "Welcome to Beshop.",
+        "Titul4": "Select a user type before registering",
+        "Titul5": "I’m a seller",
+        "Titul6": "I’m a customer",
+        "Titul7": "Your email address",
+        "Titul8": "Your shop name",
+        "Titul9": "Your Industry Type",
+        "Titul10": "Your Location",
+        "Titul11": "Enter password",
+        "Titul12": "Retype your password",
+        "Titul13": "finish",
+        "Titul14": "Congrats!!!",
+        "Titul15": "Your sales profile is ready, now you can discover millions of buyers.",
+        "Titul16": "go to profile",
+        "Titul17": "customize your shop",
+        "Titul18": "next",
+        "Titul19": "Select password"
+    },
+    "MobSearch": {
+        "Titul": "search"
+    },
+    "TopNavTwo": {
+        "Titul": "sign in",
+        "Titul2": "sign up"
+    },
+    "DropDownCat": {
+        "Titul": "All Catigories"
+    },
+    "ProductHeader": {
+        "Titul": "Same discounts for everyone"
+    },
+    "ProductTab": {
+        "Titul": "load More"
+    },
+    "ProductUnderTab": {
+        "Titul": "Subscribe to store products",
+        "Titul2": "Subscribe to store news to instantly histories of each new product.",
+        "Titul3": "Enter email address",
+        "Titul4": "subscribe"
+    },
+    "FaqHeader": {
+        "Titul": "Hello, How we can help you?",
+        "Titul2": "Selling",
+        "Titul3": "Buying",
+        "Titul4": "Shipping"
+    },
+    "UserAccount": {
+        "Titul": "My Account"
+    },
+    "UserLogin": {
+        "Titul": "Login",
+        "Titul2": "Welcome back! Sign in to your account.",
+        "Titul3": "Username or Email Address",
+        "Titul4": "Enter Username or Email Address",
+        "Titul5": "Password",
+        "Titul6": "Remember Me",
+        "Titul7": "Lost your password?"
+    },
+    "UserRegistration": {
+        "Titul": "Regstration",
+        "Titul2": " Create new account today to reap the benefits of a personalized shopping experience.",
+        "Titul3": "Your personal data will be used to support your experience throughout this website, to manage your account, and for other purposes described in our ",
+        "Titul4": " privacy policy.",
+        "Titul5": "Sign up today and you will be able to :",
+        "Titul6": "Speed your way through checkout",
+        "Titul7": "Track your orders easily",
+        "Titul8": "Keep a record of all your purchases"
+    },
 
-  
+    "Footer": {
+        "Titul": "Got questions? Call us 24/7!",
+        "Titul1": "Location:",
+        "Titul2": "Chilanzar district, Bunyodkor ave",
+        "Titul3": "Customer Services",
+        "Titul4": "Help Center",
+        "Titul5": "Contact Us",
+        "Titul6": "Report Abuse",
+        "Titul7": "Submit & Dispute",
+        "Titul8": " Policies & Rules",
+        "Titul9": "Get Paid for Your Feedback",
+        "Titul10": "Sell on beshop",
+        "Titul11": "Supplier Memberships",
+        "Titul12": "Learning Center",
+        "Titul13": "Partner Program",
+        "Titul14": "Buy on beshop",
+        "Titul15": "All Categories",
+        "Titul16": "Request for Quotation",
+        "Titul17": "Ready to Ship",
+        "Titul18": "beshop.uz. All rights reserved.",
+        "Titul19": "Product Listing Policy - Intellectual Property Protection - Privacy Policy - Terms of Use - User Information Legal Enquiry Guide"
+    },
+    "HomeSecFive": {
+        "Titul": "Sign up to Newsletter",
+        "Titul1": "...and receive $20 coupon for first shopping",
+        "Titul2": "Enter email address",
+        "Titul3": "Sign Up"
+    },
+    "HomeSecFour": {
+        "Titul": "Featured",
+        "Titul1": "of ",
+        "Titul2": "brands"
+    },
+    "HomeSecThree": {
+        "Titul": "Special Offer",
+        "Titul1": "Sale",
+        "Titul2": "Liquid Ears Bluetooth Metallic Headphones - Rose Gold",
+        "Titul3": "Days left:",
+        "Titul4": "Already sold",
+        "Titul5": "With free shipping",
+        "Titul6": "Best sellers",
+        "Titul7": "ADS HERE"
+    },
+    "HomeSecTwo": {
+        "Titul": "Deal and offers",
+        "Titul1": "Hygiene equipments"
+    },
+    "CountDown": {
+        "Titul": "Time's up!"
+    },
+    "ProductDetailRightForm": {
+        "Titul": "Price",
+        "Titul1": "Discount",
+        "Titul2": "Sold by",
+        "Titul3": "All sales",
+        "Titul4": "Remaining",
+        "Titul5": "Color",
+        "Titul6": "Quantity"
+    },
+    "ProductDetailUnderSlider": {
+        "Titul": "Buy the Samsung Gear S4 Smartwatch at a 20% discount, which caused the hottest noise of the day.",
+        "Titul1": "buy now"
+    },
+    "OtherPageNav": {
+        "Titul": "Catigories",
+        "Titul1": "Services",
+        "Titul2": "Sell on Beshop",
+        "Titul3": "Help",
+        "Titul4": "Get mobile App",
+        "Titul5": "Uzbek - UZS"
+    },
+    "CardPageRight": {
+        "Titul": "Cart totals",
+        "Titul1": "Subtotal",
+        "Titul2": "Shipping",
+        "Titul3": "Flat Rate:",
+        "Titul4": "Calculate Shipping",
+        "Titul5": "Total",
+        "Titul6": "APPLY",
+        "Titul7": "update cart",
+        "Titul8": "checkout now",
+        "Titul9": "Cupon code"
+    },
+    "WishListPage": {
+        "Titul": "My wishlist on BeShop",
+        "Titul1": "PRODUCT",
+        "Titul2": "PRICE",
+        "Titul3": "QUANTITY",
+        "Titul4": "STOCK STATUS"
+    },
+    "CheckOutPage": {
+        "Titul": "Your selected products",
+        "Titul1": "billing detail",
+        "Titul2": "First Name",
+        "Titul3": "Last Name",
+        "Titul4": "Company Name",
+        "Titul5": "Optional",
+        "Titul6": "Country",
+        "Titul7": "Street Address",
+        "Titul8": "Postcode/Zip",
+        "Titul9": "State",
+        "Titul10": "Email Address",
+        "Titul11": "Create An Account?",
+        "Titul12": "* If you select this option,an account will be opened for you based on the information you entered above.",
+        "Titul13": "Shipping Details details",
+        "Titul14": "Create An Account ?",
+        "Titul15": "Apt, Suite, Etc.",
+        "Titul16": "City",
+        "Titul17": "Postcode/Zip",
+        "Titul18": "Phone",
+        "Titul19": "Order Notes",
+        "Titul20": "Required !",
+        "Titul21": "Invalid email",
+        "Titul22": "Too short!",
+        "Titul23": "Too Long!",
+        "Titul24": "Have a coupon?",
+        "Titul25": "Click here to enter your code",
+        "Titul26": "your order",
+        "Titul27": "Product",
+        "Titul28": "Total",
+        "Titul29": "subtotal",
+        "Titul30": "shipping",
+        "Titul31": "Flat Rate:",
+        "Titul32": "total",
+        "Titul33": "Direct Bank Transfer",
+        "Titul34": "Check Payments",
+        "Titul35": "Cash On Deliver",
+        "Titul36": "Whats Is PayPal?",
+        "Titul37": "I Have Read And Agree To The Website Terms And Conditions *",
+        "Titul38": "Primary",
+        "Titul39": "Returning customer?",
+        "Titul40": "Click here to log in"
 
 
-  }
 
->>>>>>> 088c227aed7f22f476b95fd8afb9f6778c1ec8fe
+
+    }
+
+
 }

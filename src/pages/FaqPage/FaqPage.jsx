@@ -7,15 +7,13 @@ import FaqHeader from "../../layouts/FaqPage/FaqHeader/FaqHeader";
 import "./FaqPage.scss";
 import TitleHelmet from "../../components/TitleHelmet/TitleHelmet";
 
-
 function FaqPage() {
   return (
     <div className="faq-page">
-<<<<<<< HEAD
       <TitleHelmet title="Faq page" />
-=======
-      <TitleHemlet title="Faq Page"/>
->>>>>>> 088c227aed7f22f476b95fd8afb9f6778c1ec8fe
+
+      <TitleHemlet title="Faq Page" />
+
       <OtherPageNav />
       <MDBContainer>
         <div className="my-5">
