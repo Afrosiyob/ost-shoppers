@@ -32,7 +32,6 @@ const validationSchema = Yup.object().shape({
     .required("Required"),
 });
 
-function SignUp() {
   const [section, setsection] = useState(1);
 
   return (

@@ -15,7 +15,6 @@ const validationSchema = Yup.object().shape({
   email: Yup.string().email("Invalid email").required("Required"),
 });
 
-function ResetPass() {
   return (
     <div className="res-pass-wrap">
       <div className="res-header-top">
