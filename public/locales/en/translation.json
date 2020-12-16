@@ -1,3 +1,103 @@
 {
-  "msg": "hello"
+  "msg": "hello",
+  "TopNavOne": {
+    "Titul": "When buying more than 200,000 soums, delivery in Tashkent is free",
+    "Titul2": "Sign In",
+    "Titul3": "Sign Up",
+    "Titul4": "or"
+  },
+  "HomeHeader": {
+    "Titul": "All Departments"
+  },
+  "Login": {
+    "Titul": "Welcome Back!",
+    "Titul2": "Login to manage your account.",
+    "Titul3": "Forgot Password",
+    "Titul4": "LOGIN",
+    "Titul5": "Do not have an account ?",
+    "Titul6": "Sign up",
+    "Titul7": "OR",
+    "Titul8": "Login with your social account",
+    "Titul9": "Invalid email",
+    "Titul10": "Required",
+    "Titul11": "Too Short!",
+    "Titul12": "Too Long!",
+    "Titul13": "Email",
+    "Titul14": "Password"
+  },
+  "ResetPass": {
+    "Titul": "Yay, Help me :",
+    "Titul2": "Don't worry, your password is attached to the email you entered during the registration process.",
+    "Titul3": "SUBMIT"
+  },
+  "SignUp": {
+    "Titul2": "Passwords must match",
+    "Titul3": "Welcome to Beshop.",
+    "Titul4": "Select a user type before registering",
+    "Titul5": "I’m a seller",
+    "Titul6": "I’m a customer",
+    "Titul7": "Your email address",
+    "Titul8": "Your shop name",
+    "Titul9": "Your Industry Type",
+    "Titul10": "Your Location",
+    "Titul11": "Enter password",
+    "Titul12": "Retype your password",
+    "Titul13": "finish",
+    "Titul14": "Congrats!!!",
+    "Titul15": "Your sales profile is ready, now you can discover millions of buyers.",
+    "Titul16": "go to profile",
+    "Titul17": "customize your shop",
+    "Titul18": "next",
+    "Titul19": "Select password"
+  },
+  "MobSearch": {
+    "Titul": "search"
+  },
+  "TopNavTwo": {
+    "Titul": "sign in",
+    "Titul2": "sign up"
+  },
+  "DropDownCat": {
+    "Titul": "All Catigories"
+  },
+  "ProductHeader": {
+    "Titul": "Same discounts for everyone"
+  },
+  "ProductTab": {
+    "Titul": "load More"
+  },
+  "ProductUnderTab": {
+    "Titul": "Subscribe to store products",
+    "Titul2": "Subscribe to store news to instantly histories of each new product.",
+    "Titul3": "Enter email address",
+    "Titul4": "subscribe"
+  },
+  "FaqHeader": {
+    "Titul": "Hello, How we can help you?",
+    "Titul2": "Selling",
+    "Titul3": "Buying",
+    "Titul4": "Shipping"
+  },
+  "UserAccount": {
+    "Titul": "My Account"
+  },
+  "UserLogin": {
+    "Titul": "Login",
+    "Titul2": "Welcome back! Sign in to your account.",
+    "Titul3": "Username or Email Address",
+    "Titul4": "Enter Username or Email Address",
+    "Titul5": "Password",
+    "Titul6": "Remember Me",
+    "Titul7": "Lost your password?"
+  },
+  "UserRegistration": {
+    "Titul": "Regstration",
+    "Titul2": " Create new account today to reap the benefits of a personalized shopping experience.",
+    "Titul3": "Your personal data will be used to support your experience throughout this website, to manage your account, and for other purposes described in our ",
+    "Titul4": " privacy policy.",
+    "Titul5": "Sign up today and you will be able to :",
+    "Titul6": "Speed your way through checkout",
+    "Titul7": "Track your orders easily",
+    "Titul8": "Keep a record of all your purchases"
+  }
 }

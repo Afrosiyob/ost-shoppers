@@ -4,10 +4,13 @@ import OtherPageNav from "../../components/TopNav/OtherPageNav/OtherPageNav";
 import FaqCollapse from "../../layouts/FaqPage/FaqCollapse/FaqCollapse";
 import FaqHeader from "../../layouts/FaqPage/FaqHeader/FaqHeader";
 import "./FaqPage.scss";
+import TitleHelmet from "../../components/TitleHelmet/TitleHelmet";
+
 
 function FaqPage() {
   return (
     <div className="faq-page">
+      <TitleHelmet title="Faq page" />
       <OtherPageNav />
       <MDBContainer>
         <div className="my-5">

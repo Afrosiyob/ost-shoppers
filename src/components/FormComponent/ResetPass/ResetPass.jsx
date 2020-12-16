@@ -2,27 +2,28 @@ import React from "react";
 import "./ResetPass.scss";
 import * as Yup from "yup";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import { useTranslation } from "react-i18next";
 
-const initialValues = {
-  email: "",
-};
+function ResetPass() {
+  const [t] = useTranslation();
 
-const onSubmit = (values) => {
-  console.log(values);
-};
+  const initialValues = {
+    email: "",
+  };
 
-const validationSchema = Yup.object().shape({
-  email: Yup.string().email("Invalid email").required("Required"),
-});
+  const onSubmit = (values) => {
+    console.log(values);
+  };
+
+  const validationSchema = Yup.object().shape({
+    email: Yup.string().email(t(`Login.Titul9`)).required(t(`Login.Titul10`)),
+  });
 
   return (
     <div className="res-pass-wrap">
       <div className="res-header-top">
-        <h3>Yay, Help me :(</h3>
-        <p>
-          Don't worry, your password is attached to the email you entered during
-          the registration process.
-        </p>
+        <h3>{t(`ResetPass.Titul`)}(</h3>
+        <p>{t(`ResetPass.Titul2`)}</p>
 
         <Formik
           initialValues={initialValues}
@@ -82,7 +83,7 @@ const validationSchema = Yup.object().shape({
                     type="email"
                     id="email"
                     name="email"
-                    placeholder="Email"
+                    placeholder={t(`Login.Titul13`)}
                   />
                 </div>
 
@@ -93,7 +94,7 @@ const validationSchema = Yup.object().shape({
                 </small>
               </div>
               <button type="submit" className="login-submit my-4">
-                LOGIN
+                {t(`ResetPass.Titul3`)}
               </button>
             </Form>
           )}

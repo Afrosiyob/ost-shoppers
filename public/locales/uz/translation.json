@@ -1,3 +1,103 @@
 {
-  "msg": "salom"
+  "msg": "salom",
+  "TopNavOne": {
+    "Titul": "200 000 so'mdan ortiq narxni sotib olayotganda, Toshkent shahrida etkazib berish bepul",
+    "Titul2": "Kirish",
+    "Titul3": "Ro'yxatdan o'tish",
+    "Titul4": "yoki"
+  },
+  "HomeHeader": {
+    "Titul": "Barcha bo'limlar"
+  },
+  "Login": {
+    "Titul": "Xush kelibsiz!",
+    "Titul2": "Hisobingizni boshqarish uchun tizimga kiring.",
+    "Titul3": "Parolni unutdingizmi",
+    "Titul4": "KIRISH",
+    "Titul5": "Hisobingiz yo'qmi ?",
+    "Titul6": "Ro'yxatdan o'tish",
+    "Titul7": "YOKI",
+    "Titul8": "Ijtimoiy hisobingiz bilan kiring",
+    "Titul9": "Elektron pochta yaroqsiz",
+    "Titul10": "Majburiy",
+    "Titul11": "Juda qisqa!",
+    "Titul12": "Juda uzun!",
+    "Titul13": "Elektron pochta",
+    "Titul14": "Parol"
+  },
+  "ResetPass": {
+    "Titul": "Yordam bering:",
+    "Titul2": "Xavotir olmang, parolingiz ro'yxatdan o'tish paytida kiritilgan elektron pochtangizga biriktirilgan.",
+    "Titul3": "YUBORISH"
+  },
+  "SignUp": {
+    "Titul2": "Parollar bir xil bo'lishi kerak",
+    "Titul3": "Beshop-ga xush kelibsiz",
+    "Titul4": "Ro'yxatdan o'tishdan oldin foydalanuvchi turini tanlang",
+    "Titul5": "Men sotuvchiman",
+    "Titul6": "Men xaridorman",
+    "Titul7": "Sizning e-pochta manzilingiz",
+    "Titul8": "Sizning do'koningiz nomi",
+    "Titul9": "Sizning sanoat turingiz",
+    "Titul10": "Sizning joylashuvingiz",
+    "Titul11": "Parolni kiriting",
+    "Titul12": "Parolingizni qayta kiriting",
+    "Titul13": "tugatish",
+    "Titul14": "Tabriklaymiz !!!",
+    "Titul15": "Sizning savdo profilingiz tayyor, endi siz millionlab xaridorlarni topishingiz mumkin.",
+    "Titul16": "profilga o'ting",
+    "Titul17": "do'koningizni sozlang",
+    "Titul18": "Keyingi",
+    "Titul19": "Parolni tanlang"
+  },
+  "MobSearch": {
+    "Titul": "izlang"
+  },
+  "TopNavTwo": {
+    "Titul": "kirish",
+    "Titul2": "ro'yxatdan o'tish"
+  },
+  "DropDownCat": {
+    "Titul": "Barcha Toifalar"
+  },
+  "ProductHeader": {
+    "Titul": "Barchaga bir xil chegirmalar"
+  },
+  "ProductTab": {
+    "Titul": "ko'proq yuklang"
+  },
+  "ProductUnderTab": {
+    "Titul": "Mahsulotlarni saqlash uchun obuna bo'ling",
+    "Titul2": "Yangiliklarni har bir yangi mahsulotning oniy tarixiga saqlash uchun obuna bo'ling.",
+    "Titul3": "Elektron pochta manzilini kiriting",
+    "Titul4": "obuna bo'lish"
+  },
+  "FaqHeader": {
+    "Titul": "Salom, biz sizga qanday yordam bera olamiz?",
+    "Titul2": "Sotish",
+    "Titul3": "Sotib olish",
+    "Titul4": "Yetkazib berish"
+  },
+  "UserAccount": {
+    "Titul": "Mening hisobim"
+  },
+  "UserLogin": {
+    "Titul": "Kirish",
+    "Titul2": "Xush kelibsiz! Hisobingizga kiring.",
+    "Titul3": "Foydalanuvchi nomi yoki elektron pochta manzili",
+    "Titul4": "Foydalanuvchi nomi yoki elektron pochta manzillarini kiriting",
+    "Titul5": "Parol",
+    "Titul6": "Meni eslaysizmi",
+    "Titul7": "Parolni unutdingizmi?"
+  },
+  "UserRegistration": {
+    "Titul": "Ro'yxatdan o'tish",
+    "Titul2": "Shaxsiy xarid qilish tajribasining afzalliklaridan foydalanish uchun bugun yangi hisob yarating.",
+    "Titul3": "Shaxsiy ma'lumotlaringiz ushbu veb-saytdagi tajribangizni qo'llab-quvvatlash, sizning hisob qaydnomangizni boshqarish va bizning sahifamizda tavsiflangan boshqa maqsadlar uchun ishlatiladi",
+    "Titul4": " maxfiylik siyosati.",
+    "Titul5": "Bugun ro'yxatdan o'ting, shunda siz quyidagilarni amalga oshirishingiz mumkin:",
+    "Titul6": "Kassadan o'tishda tezlikni oshiring",
+    "Titul7": "Buyurtmalaringizni osongina kuzatib boring",
+    "Titul8": "Barcha xaridlaringizni qayd qilib qo'ying"
+  }
 }

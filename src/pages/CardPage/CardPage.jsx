@@ -1,5 +1,6 @@
 import { MDBAnimation, MDBCol, MDBContainer, MDBRow } from "mdbreact";
 import React, { useState } from "react";
+import TitleHelmet from "../../components/TitleHelmet/TitleHelmet";
 import OtherPageNav from "../../components/TopNav/OtherPageNav/OtherPageNav";
 
 import CardPageLeft from "../../layouts/CardPage/CardPageLeft/CardPageLeft";
@@ -19,6 +20,7 @@ function CardPage() {
 
   return (
     <div>
+      <TitleHelmet title="Card page" />
       <OtherPageNav />
       <MDBContainer>
         <MDBRow>

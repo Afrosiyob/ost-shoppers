@@ -3,14 +3,21 @@ import React from "react";
 import OtherPageNav from "../../components/TopNav/OtherPageNav/OtherPageNav";
 import UserLogin from "../../layouts/UserAccount/UserLogin/UserLogin";
 import UserRegistration from "../../layouts/UserAccount/UserRegistration/UserRegistration";
+import TitleHelmet from "../../components/TitleHelmet/TitleHelmet";
+import { useTranslation } from "react-i18next";
 
 function UserAccount() {
+  const [t] = useTranslation();
+
   return (
     <div>
+      <TitleHelmet title="UserAccount page" />
       <OtherPageNav />
       <MDBContainer>
         <div className="my-5 w-100 pt-5">
-          <h1 className="w-100 text-center font-weight-bold">My Account</h1>
+          <h1 className="w-100 text-center font-weight-bold">
+            {t(`UserAccount.Titul`)}
+          </h1>
         </div>
 
         <MDBRow className="justify-content-between">

@@ -3,9 +3,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "./ProductTab.scss";
+import { useTranslation } from "react-i18next";
 
 function ProductTab() {
+  const [ t ] = useTranslation();
   return (
+
     <div className="my-3">
       <MDBAnimation type="fadeInUp">
         <MDBContainer>
@@ -181,13 +184,13 @@ function ProductTab() {
                   </div>
                 </div>
                 <div className="load-more my-3">
-                  <button className="load-more">load More</button>
+                  <button className="load-more">{ t(`ProductTab.Titul`) }</button>
                 </div>
               </TabPanel>
               <TabPanel>
                 <h2>Any content 2</h2>
                 <div className="load-more my-3">
-                  <button className="load-more">load More</button>
+                  <button className="load-more">{ t(`ProductTab.Titul`) }</button>
                 </div>
               </TabPanel>
             </Tabs>

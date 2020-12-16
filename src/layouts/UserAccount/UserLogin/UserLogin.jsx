@@ -5,30 +5,33 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { MDBBtn } from "mdbreact";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
-const initialValues = {
-  userName: "",
-  password: "",
-  remember: false,
-};
-
-const validationScheme = Yup.object().shape({
-  userName: Yup.string().required("Required!"),
-  password: Yup.string()
-    .min(6, "Too Short!")
-    .max(50, "Too Long!")
-    .required("Required"),
-});
 
 function UserLogin(props) {
+  const [ t ] = useTranslation();
+
+  const initialValues = {
+    userName: "",
+    password: "",
+    remember: false,
+  };
+  
+  const validationScheme = Yup.object().shape({
+    userName: Yup.string().required(t(`Login.Titul10`)),
+    password: Yup.string()
+      .min(6, t(`Login.Titul11`))
+      .max(50, t(`Login.Titul12`))
+      .required(t(`Login.Titul10`)),
+  });
   return (
     <div>
-      <h3 className="text-muted font-weight-bolder">Login</h3>
+      <h3 className="text-muted font-weight-bolder">{t(`UserLogin.Titul`)}</h3>
       <hr />
 
       <h5 className="font-weight-bold text-uppercase">
         {" "}
-        Welcome back! Sign in to your account.{" "}
+        {t(`UserLogin.Titul2`)}{" "}
       </h5>
 
       <Formik
@@ -46,7 +49,7 @@ function UserLogin(props) {
             <div className="mt-3">
               <label htmlFor="firstName">
                 <small>
-                  <b>Username or Email Address</b>
+                  <b>{t(`UserLogin.Titul3`)}</b>
                 </small>
               </label>
               <Field
@@ -54,7 +57,7 @@ function UserLogin(props) {
                 type="text"
                 id="userName"
                 name="userName"
-                placeholder="Enter Username or Email Addresss"
+                placeholder= {t(`UserLogin.Titul4`)}
               />
               <small style={{ color: "red" }}>
                 <ErrorMessage name="userName">
@@ -66,7 +69,7 @@ function UserLogin(props) {
             <div className="my-3">
               <label htmlFor="password">
                 <small>
-                  <b>Password</b>
+                  <b>{t(`UserLogin.Titul5`)}</b>
                 </small>
               </label>
               <Field
@@ -86,7 +89,7 @@ function UserLogin(props) {
               <label htmlFor="remember">
                 <Field type="checkbox" id="remember" name="remember" />
                 <small className="ml-2">
-                  <b> Remember Me</b>
+                  <b>{t(`UserLogin.Titul6`)}</b>
                 </small>
               </label>
             </div>
@@ -98,11 +101,11 @@ function UserLogin(props) {
                 rounded
                 type="submit"
               >
-                Login
+                {t(`UserLogin.Titul`)}
               </MDBBtn>
             </div>
             <Link>
-              <small>Lost your password ?</small>
+              <small>{t(`UserLogin.Titul7`)}</small>
             </Link>
           </Form>
         )}

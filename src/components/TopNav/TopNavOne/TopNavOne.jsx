@@ -5,8 +5,10 @@ import DropDownLang from "./DropDownLang/DropDownLang";
 import { MDBContainer, MDBModal, MDBModalBody, MDBModalHeader } from "mdbreact";
 import Login from "../../FormComponent/Login/Login";
 import SignUp from "../../FormComponent/SignUp/SignUp";
+import { useTranslation } from "react-i18next";
 
 function TopNavOne() {
+  const {t} = useTranslation();
   const [state, setstate] = useState({
     modal8: false,
     modal9: false,
@@ -26,8 +28,7 @@ function TopNavOne() {
           <div className="wrap-box">
             <div className="nav-one-left">
               <p>
-                When buying more than 200,000 soums, delivery in Tashkent is
-                free
+              {t(`TopNavOne.Titul`)}
               </p>
             </div>
             <ul className="nav-one-right">
@@ -91,16 +92,16 @@ function TopNavOne() {
                     toggle(8);
                   }}
                 >
-                  Sign In
+                  {t(`TopNavOne.Titul2`)}
                 </span>{" "}
-                or{" "}
+                {t(`TopNavOne.Titul4`)}{" "}
                 <span
                   className="sign-box px-3 py-2"
                   onClick={() => {
                     toggle(9);
                   }}
                 >
-                  Sign Up
+                  {t(`TopNavOne.Titul3`)}
                 </span>
               </li>
             </ul>

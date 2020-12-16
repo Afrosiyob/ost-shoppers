@@ -7,8 +7,11 @@ import SearchBox from "./SearchBox/SearchBox";
 
 import "./TopNavTwo.scss";
 import { useEffect } from "react";
+import ShopLogo from "../../../assets/shopLogo.svg"
+import { useTranslation } from "react-i18next";
 
 function TopNavTwo() {
+  const [ t ] = useTranslation();
   const [salom, setSalom] = useState(false);
   const [hello, setHello] = useState({
     componentName: "Login",
@@ -37,7 +40,7 @@ function TopNavTwo() {
         <div className="top-nav-two">
           <div className="left-nav">
             <Link to="/">
-              beshop<span>.</span>{" "}
+              <img src={ShopLogo} alt=""/>
             </Link>
           </div>
           <div className="mid-nav">
@@ -57,7 +60,7 @@ function TopNavTwo() {
                       })
                     }
                   >
-                    sing in
+                    sign in
                   </span>
                   <div>
                     <RightModal
@@ -76,7 +79,7 @@ function TopNavTwo() {
                       })
                     }
                   >
-                    sing up
+                    sign up
                   </span>
                 </div>
               </div> */}
@@ -105,7 +108,7 @@ function TopNavTwo() {
                       })
                     }
                   >
-                    sing in
+                   { t(`TopNavTwo.Titul`) }
                   </div>
                   <br />
                   <div
@@ -118,7 +121,7 @@ function TopNavTwo() {
                       })
                     }
                   >
-                    sing up
+                    { t(`TopNavTwo.Titul2`) }
                   </div>
                 </div>
               </div>

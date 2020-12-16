@@ -6,38 +6,45 @@ import { Link } from "react-router-dom";
 import { MDBAnimation, MDBModal, MDBModalBody, MDBModalHeader } from "mdbreact";
 import ResetPass from "../ResetPass/ResetPass";
 import Axios from "axios";
+import { useTranslation } from "react-i18next";
 
-const initialValues = {
-  email: "",
-  password: "",
-};
-const onSubmit = async (values) => {
-  console.log(values);
-
-  await Axios.post("http://localhost:3000/profile?q=", values)
-    .then((res) => {
-      console.log(res.status);
-      if (res.status === 201) {
-        alert("true");
-      }
-    })
-    .catch((err) => console.log(err));
-};
-const validationSchema = Yup.object().shape({
-  email: Yup.string().email("Invalid email").required("Required"),
-  password: Yup.string()
-    .min(6, "Too Short!")
-    .max(50, "Too Long!")
-    .required("Required"),
-});
 
 function Login(props) {
   // const [bColor, setbColor] = useState("black");
 
+  const [ t ] = useTranslation();
+
+  const initialValues = {
+    email: "",
+    password: "",
+  };
+  const onSubmit = async (values) => {
+    console.log(values);
+  
+    await Axios.post("http://localhost:3000/profile?q=", values)
+      .then((res) => {
+        console.log(res.status);
+        if (res.status === 201) {
+          alert("true");
+        }
+      })
+      .catch((err) => console.log(err));
+  };
+  
+  const validationSchema = Yup.object().shape({
+    email: Yup.string().email(t(`Login.Titul9`)).required(t(`Login.Titul10`)),
+    password: Yup.string()
+      .min(6, t(`Login.Titul11`))
+      .max(50, t(`Login.Titul12`))
+      .required(t(`Login.Titul10`)),
+  });
+  
   const [state, setstate] = useState({
     modal8: false,
     modal9: false,
   });
+
+ 
 
   function toggle(nr) {
     let modalNumber = "modal" + nr;
@@ -68,8 +75,8 @@ function Login(props) {
       <MDBAnimation type="fadeInRight">
         <div className="login-wrap-box">
           <div className="login-header-top">
-            <h3>Welcome Back!</h3>
-            <p>Login to manage your account.</p>
+            <h3>{t(`Login.Titul`)}</h3>
+            <p>{t(`Login.Titul2`)}</p>
 
             <Formik
               initialValues={initialValues}
@@ -129,7 +136,7 @@ function Login(props) {
                         type="email"
                         id="email"
                         name="email"
-                        placeholder="Email"
+                        placeholder= {t(`Login.Titul13`)}
                       />
                     </div>
 
@@ -191,7 +198,7 @@ function Login(props) {
                         type="password"
                         id="password"
                         name="password"
-                        placeholder="Password"
+                        placeholder= {t(`Login.Titul14`)}
                       />
                     </div>
 
@@ -205,16 +212,16 @@ function Login(props) {
                   <div className="forgot-psw waves" waves={true}>
                     <small>
                       {" "}
-                      <Link onClick={() => toggle(8)}>Forgot Password</Link>
+                      <Link onClick={() => toggle(8)}>{t(`Login.Titul3`)}</Link>
                     </small>
                   </div>
 
                   <button type="submit" className="login-submit my-4">
-                    LOGIN
+                    {t(`Login.Titul4`)}
                   </button>
 
                   <div className="sign-up-box my-2">
-                    Do not have an account ? <Link> Sign up </Link>
+                    {t(`Login.Titul5`)} <Link> {t(`Login.Titul6`)} </Link>
                   </div>
 
                   <div className="mt-2 d-flex justify-content-center align-content-center align-items-center">
@@ -250,7 +257,7 @@ function Login(props) {
                         </linearGradient>
                       </defs>
                     </svg>{" "}
-                    OR{" "}
+                    {t(`Login.Titul7`)}{" "}
                     <svg
                       width="42"
                       height="1"
@@ -290,7 +297,7 @@ function Login(props) {
                     className="d-flex justify-content-center my-2"
                     style={{ color: "#B6B5B5" }}
                   >
-                    Login with your social account
+                    {t(`Login.Titul8`)}
                   </div>
 
                   <div className="my-2 d-flex justify-content-between sot-box">

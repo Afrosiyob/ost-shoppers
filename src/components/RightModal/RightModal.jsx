@@ -37,7 +37,7 @@ function RightModal(props) {
         return (
           <div>
             {" "}
-            <SignUp />{" "}
+            <SignUp  />{" "}
           </div>
         );
       default:

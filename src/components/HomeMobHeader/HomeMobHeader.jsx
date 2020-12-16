@@ -2,6 +2,7 @@ import { MDBContainer } from "mdbreact";
 import React, { useState } from "react";
 import "./HomeMobHeader.scss";
 import MobSearch from "./MobSearch/MobSearch";
+import Logo from "../../assets/shopLogo.svg";
 
 function HomeMobHeader() {
   const [bg, setbg] = useState(true);
@@ -37,9 +38,7 @@ function HomeMobHeader() {
             <i className="fas fa-times"></i>
           </div>
         </div>
-        <h2>
-          beshop <span>.</span>{" "}
-        </h2>
+        <img src={Logo} alt="logo" />
 
         <ul>
           <li>Value of the Day</li>

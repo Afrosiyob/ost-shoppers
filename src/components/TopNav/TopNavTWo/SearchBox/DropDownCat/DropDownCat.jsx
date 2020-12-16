@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-
 import "./DropDownCat.scss";
+import { useTranslation } from "react-i18next";
+
 
 function DropDownCat() {
+  const [ t ] = useTranslation();
   const [cat, setcat] = useState(false);
-  const [catVal, setcatVal] = useState("All Catigories");
+  const [catVal, setcatVal] = useState(t(`DropDownCat.Titul`));
   function handleDrop(val) {
     setcatVal(val);
     setcat(!cat);

@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "./FaqHedaer.scss";
+import { useTranslation } from "react-i18next";
+
 function FaqHeader() {
+  const [ t ] = useTranslation();
   const [fillcolor, setfillcolor] = useState({
     colorOne: "#7B839E",
     colorTwo: "#7B839E",
@@ -28,7 +31,7 @@ function FaqHeader() {
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
           crossorigin="anonymous"
         />
-        <h1>Hello, How we can help you?</h1>
+        <h1>{ t(`FaqHeader.Titul`) }</h1>
         <div className="my-icon-box">
           <div>
             <div
@@ -82,7 +85,7 @@ function FaqHeader() {
                   />
                 </svg>
 
-                <p>Selling</p>
+                <p>{ t(`FaqHeader.Titul2`) }</p>
               </div>
             </div>
           </div>
@@ -125,7 +128,7 @@ function FaqHeader() {
                   </defs>
                 </svg>
 
-                <p>Buying</p>
+                <p>{ t(`FaqHeader.Titul3`) }</p>
               </div>
             </div>
           </div>
@@ -201,7 +204,7 @@ function FaqHeader() {
                   />
                 </svg>
 
-                <p>Shipping</p>
+                <p>{ t(`FaqHeader.Titul4`) }</p>
               </div>
             </div>
           </div>

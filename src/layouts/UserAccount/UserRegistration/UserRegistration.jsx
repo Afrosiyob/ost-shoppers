@@ -6,25 +6,29 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { Link } from "react-router-dom";
 import { MDBBtn } from "mdbreact";
-
-const initialValues = {
-  email: "",
-};
-
-const validationScheme = Yup.object().shape({
-  email: Yup.string().email("Invalid Email!").required("Required!"),
-});
+import { useTranslation } from "react-i18next";
 
 function UserRegistration() {
+  const [t] = useTranslation();
+
+  const initialValues = {
+    email: "",
+  };
+
+  const validationScheme = Yup.object().shape({
+    email: Yup.string().email(t(`Login.Titul9`)).required(t(`Login.Titul10`)),
+  });
+
   return (
     <div>
-      <h3 className="text-muted font-weight-bolder">Regstration</h3>
+      <h3 className="text-muted font-weight-bolder">
+        {t(`UserRegistration.Titul`)}
+      </h3>
       <hr />
 
       <h5 className="font-weight-bold text-uppercase">
         {" "}
-        Create new account today to reap the benefits of a personalized shopping
-        experience.{" "}
+        {t(`UserRegistration.Titul2`)}{" "}
       </h5>
 
       <Formik
@@ -42,7 +46,7 @@ function UserRegistration() {
             <div className="mt-3">
               <label htmlFor="email">
                 <small>
-                  <b>Username or Email Address</b>
+                  <b>{t(`UserLogin.Titul3`)}</b>
                 </small>
               </label>
               <Field
@@ -50,7 +54,7 @@ function UserRegistration() {
                 type="email"
                 id="email"
                 name="email"
-                placeholder="Email Addresss"
+                placeholder={t(`UserRegistration.Titul3`)}
               />
               <small style={{ color: "red" }}>
                 <ErrorMessage name="email">
@@ -61,15 +65,15 @@ function UserRegistration() {
 
             <div className="p-2 mt-3 text-muted">
               <p>
-                Your personal data will be used to support your experience
-                throughout this website, to manage your account, and for other
-                purposes described in our <Link>privacy policy.</Link>
+                {" "}
+                {t(`UserRegistration.Titul3`)}
+                <Link>{t(`UserRegistration.Titul4`)}</Link>
               </p>
             </div>
 
             <div className="mt-3">
               <p className="font-weight-bold">
-                Sign up today and you will be able to :{" "}
+                {t(`UserRegistration.Titul5`)}{" "}
               </p>
 
               <div className="mt-2">
@@ -92,7 +96,7 @@ function UserRegistration() {
                       fill="#83E226"
                     />
                   </svg>
-                  Speed your way through checkout
+                  {t(`UserRegistration.Titul6`)}
                 </p>
                 <p>
                   {" "}
@@ -113,7 +117,7 @@ function UserRegistration() {
                       fill="#83E226"
                     />
                   </svg>
-                  Track your orders easily
+                  {t(`UserRegistration.Titul7`)}
                 </p>
                 <p>
                   {" "}
@@ -134,7 +138,7 @@ function UserRegistration() {
                       fill="#83E226"
                     />
                   </svg>
-                  Keep a record of all your purchases
+                  {t(`UserRegistration.Titul8`)}
                 </p>
               </div>
             </div>
@@ -145,7 +149,7 @@ function UserRegistration() {
               rounded
               type="submit"
             >
-              Registration
+              {t(`UserRegistration.Titul`)}
             </MDBBtn>
           </Form>
         )}

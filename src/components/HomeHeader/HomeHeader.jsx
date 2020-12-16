@@ -1,10 +1,12 @@
 import { MDBAnimation, MDBContainer } from "mdbreact";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./HomeHeader.scss";
 import SliderBox from "./SliderBox/SliderBox";
 import SubMneu from "./SubMenu/SubMneu";
 
 function HomeHeader() {
+  const { t } = useTranslation();
   return (
     <MDBAnimation reveal type="fadeInUp">
       <MDBContainer>
@@ -12,7 +14,7 @@ function HomeHeader() {
           <div className="left-header">
             <div className="top-box">
               <i className="fas fa-bars"></i>
-              All Departments
+              {t(`HomeHeader.Titul`)}
             </div>
             <div className="under-box">
               <SubMneu />

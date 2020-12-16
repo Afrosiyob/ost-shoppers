@@ -4,33 +4,40 @@ import "./SignUp.scss";
 import * as Yup from "yup";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { MDBAnimation } from "mdbreact";
+import { useTranslation } from "react-i18next";
 
-const initialValues = {
-  person: "",
-  email: "",
-  shopName: "",
-  industryType: "",
-  location: "",
-  password: "",
-  passwordConfirmation: "",
-};
 
-const validationSchema = Yup.object().shape({
-  person: Yup.string().required("Required"),
-  email: Yup.string().email("Invalid email").required("Required"),
-  shopName: Yup.string().required("Required"),
-  industryType: Yup.string().required("Required"),
-  location: Yup.string().required("Required"),
-  password: Yup.string()
-    .min(6, "Too Short!")
-    .max(50, "Too Long!")
-    .required("Required"),
-  passwordConfirmation: Yup.string()
-    .min(6, "Too Short!")
-    .max(50, "Too Long!")
-    .oneOf([Yup.ref("password"), null], "Passwords must match")
-    .required("Required"),
-});
+
+function SignUp() {
+
+  const {t} = useTranslation();
+
+  const initialValues = {
+    person: "",
+    email: "",
+    shopName: "",
+    industryType: "",
+    location: "",
+    password: "",
+    passwordConfirmation: "",
+  };
+  
+  const validationSchema = Yup.object().shape({
+    person: Yup.string().required(t(`Login.Titul10`)),
+    email: Yup.string().email(t(`Login.Titul9`)).required(t(`Login.Titul10`)),
+    shopName: Yup.string().required(t(`Login.Titul10`)),
+    industryType: Yup.string().required(t(`Login.Titul10`)),
+    location: Yup.string().required(t(`Login.Titul10`)),
+    password: Yup.string()
+      .min(6, t(`Login.Titul11`))
+      .max(50, t(`Login.Titul12`))
+      .required(t(`Login.Titul10`)),
+    passwordConfirmation: Yup.string()
+      .min(6, t(`Login.Titul11`))
+      .max(50, t(`Login.Titul12`))
+      .oneOf([Yup.ref("password"), null], t(`SignUp.Titul2`))
+      .required(t(`Login.Titul10`)),
+  });
 
   const [section, setsection] = useState(1);
 
@@ -55,8 +62,8 @@ const validationSchema = Yup.object().shape({
                   return (
                     <MDBAnimation type="fadeInRight">
                       <div className="section-one">
-                        <h3>Welcome to Beshop.</h3>
-                        <p>Select a user type before registering</p>
+                        <h3>{t(`SignUp.Titul3`)}</h3>
+                        <p>{t(`SignUp.Titul4`)}</p>
 
                         <div className="select-box my-3">
                           <Field
@@ -74,10 +81,10 @@ const validationSchema = Yup.object().shape({
                             className="radio-two"
                           />
                           <label className="select-one mb-3" htmlFor="one">
-                            I’m a seller
+                          {t(`SignUp.Titul5`)}
                           </label>
                           <label className="select-two" htmlFor="two">
-                            I’m a customer
+                          {t(`SignUp.Titul6`)}
                           </label>
                           {/* <div>Picked: {values.person}</div> */}
                           <small style={{ color: "red" }}>
@@ -95,7 +102,7 @@ const validationSchema = Yup.object().shape({
                               : null
                           }
                         >
-                          next{" "}
+                          {t(`SignUp.Titul18`)}{" "}
                           <svg
                             width="17"
                             height="17"
@@ -120,8 +127,8 @@ const validationSchema = Yup.object().shape({
                   return (
                     <MDBAnimation type="fadeInRight">
                       <div className="section-two">
-                        <h3>Welcome to Beshop.</h3>
-                        <p>Select a user type before registering</p>
+                      <h3>{t(`SignUp.Titul3`)}</h3>
+                        <p>{t(`SignUp.Titul4`)}</p>
 
                         <div className="my-2 wrap-box">
                           <div
@@ -170,7 +177,7 @@ const validationSchema = Yup.object().shape({
                               type="email"
                               id="email"
                               name="email"
-                              placeholder="Your email address"
+                              placeholder= {t(`SignUp.Titul7`)}
                             />
                           </div>
 
@@ -228,7 +235,7 @@ const validationSchema = Yup.object().shape({
                               type="text"
                               id="shopName"
                               name="shopName"
-                              placeholder="Your shop name"
+                              placeholder= {t(`SignUp.Titul8`)}
                             />
                           </div>
 
@@ -318,7 +325,7 @@ const validationSchema = Yup.object().shape({
                               type="text"
                               id="industryType"
                               name="industryType"
-                              placeholder="Your Industry Type"
+                              placeholder= {t(`SignUp.Titul9`)}
                             />
                           </div>
 
@@ -379,7 +386,7 @@ const validationSchema = Yup.object().shape({
                               type="text"
                               id="location"
                               name="location"
-                              placeholder="Your Location"
+                              placeholder= {t(`SignUp.Titul10`)}
                             />
                           </div>
 
@@ -405,7 +412,7 @@ const validationSchema = Yup.object().shape({
                               : null
                           }
                         >
-                          Select password{" "}
+                         {t(`SignUp.Titul19`)} {" "}
                           <svg
                             width="17"
                             height="17"
@@ -429,8 +436,8 @@ const validationSchema = Yup.object().shape({
                 case 3:
                   return (
                     <div className="section-three">
-                      <h3>Welcome to Beshop.</h3>
-                      <p>Select a user type before registering</p>
+                      <h3>{t(`SignUp.Titul3`)}</h3>
+                        <p>{t(`SignUp.Titul4`)}</p>
 
                       <div className="my-2 wrap-box">
                         <div
@@ -476,10 +483,10 @@ const validationSchema = Yup.object().shape({
                           </div>
 
                           <Field
-                            type="password"
+                            type="text"
                             id="password"
                             name="password"
-                            placeholder="Enter password"
+                            placeholder= {t(`SignUp.Titul11`)}
                           />
                         </div>
 
@@ -571,10 +578,10 @@ const validationSchema = Yup.object().shape({
                           </div>
 
                           <Field
-                            type="password"
+                            type="text"
                             id="passwordConfirmation"
                             name="passwordConfirmation"
-                            placeholder="Retype your password"
+                            placeholder= {t(`SignUp.Titul12`)}
                           />
                         </div>
 
@@ -586,17 +593,16 @@ const validationSchema = Yup.object().shape({
                       </div>
 
                       <button type="submit" className="next-sing-up mt-4">
-                        finish
+                      {t(`SignUp.Titul13`)}
                       </button>
                     </div>
                   );
                 default:
                   return (
                     <div className="section-last">
-                      <h3>Congrats!!!</h3>
+                      <h3>{t(`SignUp.Titul14`)}</h3>
                       <p>
-                        Your sales profile is ready, now you can discover
-                        millions of buyers.
+                      {t(`SignUp.Titul15`)}
                       </p>
                       <div className="my-3  d-flex justify-content-center align-content-center align-content-center">
                         <svg
@@ -626,11 +632,11 @@ const validationSchema = Yup.object().shape({
                       </div>
                       <div className="my-4 d-flex flex-column">
                         <button className="next-sing-up-one mb-3">
-                          go to profile
+                        {t(`SignUp.Titul16`)}
                         </button>
 
                         <button className="next-sing-up">
-                          customize your shop
+                        {t(`SignUp.Titul17`)}
                         </button>
                       </div>
                     </div>
