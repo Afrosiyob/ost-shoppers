@@ -5,16 +5,16 @@ import "./HomeHeader.scss";
 import SliderBox from "./SliderBox/SliderBox";
 import SubMneu from "./SubMenu/SubMneu";
 
-function HomeHeader() {
+function HomeHeader () {
   const { t } = useTranslation();
   return (
     <MDBAnimation reveal type="fadeInUp">
       <MDBContainer>
-        <div className="home-header-box">
+        <div className="home-header-box mt-5">
           <div className="left-header">
             <div className="top-box">
               <i className="fas fa-bars"></i>
-              {t(`HomeHeader.Titul`)}
+              { t( `HomeHeader.Titul` ) }
             </div>
             <div className="under-box">
               <SubMneu />

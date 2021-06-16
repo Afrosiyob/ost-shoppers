@@ -7,18 +7,18 @@ import Login from "../../FormComponent/Login/Login";
 import SignUp from "../../FormComponent/SignUp/SignUp";
 import { useTranslation } from "react-i18next";
 
-function TopNavOne() {
-  const {t} = useTranslation();
-  const [state, setstate] = useState({
+function TopNavOne () {
+  const { t } = useTranslation();
+  const [ state, setstate ] = useState( {
     modal8: false,
     modal9: false,
-  });
+  } );
 
-  function toggle(nr) {
+  function toggle ( nr ) {
     let modalNumber = "modal" + nr;
-    setstate({
-      [modalNumber]: !state[modalNumber],
-    });
+    setstate( {
+      [ modalNumber ]: !state[ modalNumber ],
+    } );
   }
 
   return (
@@ -28,7 +28,7 @@ function TopNavOne() {
           <div className="wrap-box">
             <div className="nav-one-left">
               <p>
-              {t(`TopNavOne.Titul`)}
+                Some other titul
               </p>
             </div>
             <ul className="nav-one-right">
@@ -88,20 +88,20 @@ function TopNavOne() {
                 </svg>
                 <span
                   className="sign-box px-3 py-2"
-                  onClick={() => {
-                    toggle(8);
-                  }}
+                  onClick={ () => {
+                    toggle( 8 );
+                  } }
                 >
-                  {t(`TopNavOne.Titul2`)}
-                </span>{" "}
-                {t(`TopNavOne.Titul4`)}{" "}
+                  { t( `TopNavOne.Titul2` ) }
+                </span>{ " " }
+                { t( `TopNavOne.Titul4` ) }{ " " }
                 <span
                   className="sign-box px-3 py-2"
-                  onClick={() => {
-                    toggle(9);
-                  }}
+                  onClick={ () => {
+                    toggle( 9 );
+                  } }
                 >
-                  {t(`TopNavOne.Titul3`)}
+                  { t( `TopNavOne.Titul3` ) }
                 </span>
               </li>
             </ul>
@@ -109,17 +109,17 @@ function TopNavOne() {
         </MDBContainer>
       </div>
       <MDBModal
-        isOpen={state.modal8}
-        toggle={() => {
-          toggle(8);
-        }}
+        isOpen={ state.modal8 }
+        toggle={ () => {
+          toggle( 8 );
+        } }
         fullHeight
         position="right"
       >
         <MDBModalHeader
-          toggle={() => {
-            toggle(8);
-          }}
+          toggle={ () => {
+            toggle( 8 );
+          } }
         ></MDBModalHeader>
         <MDBModalBody>
           <Login />
@@ -127,17 +127,17 @@ function TopNavOne() {
       </MDBModal>
 
       <MDBModal
-        isOpen={state.modal9}
-        toggle={() => {
-          toggle(9);
-        }}
+        isOpen={ state.modal9 }
+        toggle={ () => {
+          toggle( 9 );
+        } }
         fullHeight
         position="right"
       >
         <MDBModalHeader
-          toggle={() => {
-            toggle(9);
-          }}
+          toggle={ () => {
+            toggle( 9 );
+          } }
         ></MDBModalHeader>
         <MDBModalBody>
           <SignUp />
